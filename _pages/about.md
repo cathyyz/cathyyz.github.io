@@ -26,4 +26,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a current freshman at UC Berkeley majoring in Engineering Math & Statistics.
+Hi, I'm Cathy Zhou, an incoming freshman studying Engineering Mathematics 
+at UC Berkeley.
+
+I'm interested in computer engineering, data analysis, machine learning and human-computer interaction. I'm excited to further explore my interests through fall-term courses
+
+With hands-on experiences in data analysis, visualizing and machine learning, I'm eager to continue my journey through internships, part-time jobs and researches in the field of data analytics and computer engineering
+
+
