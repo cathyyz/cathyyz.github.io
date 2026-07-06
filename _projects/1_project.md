@@ -1,81 +1,93 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Reflect-to-Explore
+description: Self-adaptive exploration in reinforcement learning via a dual-layer reflection mechanism.
+img: assets/img/projects/reflect-to-explore/architecture.png
 importance: 1
 category: work
-related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Inspired by human metacognition's **"rapid response + deep reflection"** dual-layer mechanism, I designed a framework that enables RL agents to autonomously identify learning bottlenecks and adjust strategies in dynamic environments—improving task completion rate by **32.7%** without retraining.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Problem
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Traditional RL agents often require retraining from scratch or massive additional data when environments change. I wanted to explore: can we borrow from human "reflect-and-adjust" cognitive patterns to help agents adapt more efficiently?
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/projects/reflect-to-explore/cognitive-inspired.png" title="Cognitive science, reinforcement learning, and adaptive systems" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+  Bridging cognitive science insights with reinforcement learning to build adaptive decision-making systems.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Core Innovation: Dual-Layer Reflection Mechanism
 
-{% raw %}
+| Layer | Trigger Condition | Function |
+| --- | --- | --- |
+| **Fast Adaptation** | Sudden confidence drop between episodes | Fine-tune parameters for rapid response |
+| **Reflection** | Persistent inefficiency or declining performance | Major strategy adjustment + prioritized experience replay |
 
-```html
+**Why two layers?** Fast adaptation alone overreacts to noise; reflection alone responds too slowly. The dual-layer design balances stability and adaptability.
+
+**Multi-dimensional Confidence Evaluation:** Single reward signals are too noisy. I designed a composite metric (path efficiency + reward stability + success rate) to provide reliable triggers for reflection.
+
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/projects/reflect-to-explore/architecture.png" title="Self-adaptive reinforcement learning agent architecture" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
+<div class="caption">
+  System architecture: confidence assessment triggers fast adaptation or deep reflection, which updates Q-learning parameters and action selection.
+</div>
 
-{% endraw %}
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/projects/reflect-to-explore/innovation-summary.png" title="Innovation summary across theoretical and technical dimensions" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+## Key Challenge & Solution
+
+The hardest part was translating abstract concepts like "reflection" and "confidence" into computable mechanisms.
+
+My approach:
+
+- Defined confidence as a weighted combination of path efficiency, reward stability, and success rate
+- Established specific trigger thresholds: confidence drop > 0.25 activates fast adaptation; avg confidence < 0.45 with variance < 0.1 triggers deep reflection
+
+## Results
+
+Tested in a custom dynamic maze environment (10×10 grid, shifting obstacles, moving targets) with 30 independent runs.
+
+- **Task completion rate:** 50.3% vs baseline 37.9% (**+32.7%**)
+- **Path efficiency:** improved by **7.8%**
+- Consistent performance across different parameter configurations, demonstrating robustness
+
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/projects/reflect-to-explore/maze-environment.png" title="Dynamic maze environment with learned policy" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/projects/reflect-to-explore/results-comparison.png" title="Baseline vs reflection agent performance in dynamic maze" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Left: learned navigation policy in the dynamic maze. Right: performance comparison across cumulative rewards, success rate, steps, path efficiency, environment changes, and reward stability.
+</div>
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/projects/reflect-to-explore/threshold-analysis.png" title="Performance across threshold configurations" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Robust performance across different confidence threshold settings (0.2–0.5), with success rate and step count consistently outperforming the baseline.
+</div>
+
+## What I Learned
+
+This project taught me that cross-disciplinary transfer requires finding the right level of abstraction. "Reflection matters" is too vague to implement; simulating neural circuits is too specific to be practical. The key is identifying quantifiable intermediate concepts (confidence metrics, threshold conditions) that bridge cognitive science insights to actual algorithmic improvements.
