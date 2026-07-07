@@ -52,12 +52,50 @@ Tested in a custom dynamic maze environment (10×10 grid, shifting obstacles, mo
 - **Path efficiency:** improved by **7.8%**
 - Consistent performance across different parameter configurations, demonstrating robustness
 
-<div class="row align-items-start">
-  <div class="col-md-5 mt-3 mt-md-0">
+<style>
+  .results-pair {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .results-pair .maze-col {
+    flex: 0 0 40%;
+    width: 40%;
+    max-width: 40%;
+  }
+  .results-pair .chart-col {
+    flex: 0 0 55%;
+    width: 55%;
+    max-width: 55%;
+  }
+  .results-pair img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .results-pair {
+      flex-direction: column;
+    }
+    .results-pair .maze-col,
+    .results-pair .chart-col {
+      flex: 0 0 100%;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+
+<div class="results-pair">
+  <div class="maze-col">
     {% include figure.liquid path="assets/img/projects/reflect-to-explore/maze-environment.png" title="Dynamic maze environment with learned policy" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-md-7 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/reflect-to-explore/threshold-analysis.png" title="Performance across threshold configurations" class="img-fluid rounded z-depth-1" %}
+  <div class="chart-col">
+    {% include figure.liquid path="assets/img/projects/reflect-to-explore/results-comparison.png" title="Baseline vs reflection agent performance in dynamic maze" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
