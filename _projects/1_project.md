@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reflect-to-Explore
-description: Self-adaptive exploration in reinforcement learning via a dual-layer reflection mechanism.
+description: Self-adaptive exploration in RL via dual-layer reflection.
 img: assets/img/projects/reflect-to-explore/architecture.png
 importance: 1
 category: work
@@ -15,15 +15,6 @@ Inspired by human metacognition's **"rapid response + deep reflection"** dual-la
 
 Traditional RL agents often require retraining from scratch or massive additional data when environments change. I wanted to explore: can we borrow from human "reflect-and-adjust" cognitive patterns to help agents adapt more efficiently?
 
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/reflect-to-explore/cognitive-inspired.png" title="Cognitive science, reinforcement learning, and adaptive systems" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  Bridging cognitive science insights with reinforcement learning to build adaptive decision-making systems.
-</div>
-
 ## Core Innovation: Dual-Layer Reflection Mechanism
 
 | Layer | Trigger Condition | Function |
@@ -36,18 +27,12 @@ Traditional RL agents often require retraining from scratch or massive additiona
 **Multi-dimensional Confidence Evaluation:** Single reward signals are too noisy. I designed a composite metric (path efficiency + reward stability + success rate) to provide reliable triggers for reflection.
 
 <div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
+  <div class="col-sm-11 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/reflect-to-explore/architecture.png" title="Self-adaptive reinforcement learning agent architecture" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
   System architecture: confidence assessment triggers fast adaptation or deep reflection, which updates Q-learning parameters and action selection.
-</div>
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/reflect-to-explore/innovation-summary.png" title="Innovation summary across theoretical and technical dimensions" class="img-fluid rounded z-depth-1" %}
-  </div>
 </div>
 
 ## Key Challenge & Solution
@@ -67,25 +52,16 @@ Tested in a custom dynamic maze environment (10×10 grid, shifting obstacles, mo
 - **Path efficiency:** improved by **7.8%**
 - Consistent performance across different parameter configurations, demonstrating robustness
 
-<div class="row">
-  <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-start">
+  <div class="col-md-5 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/reflect-to-explore/maze-environment.png" title="Dynamic maze environment with learned policy" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/reflect-to-explore/results-comparison.png" title="Baseline vs reflection agent performance in dynamic maze" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  Left: learned navigation policy in the dynamic maze. Right: performance comparison across cumulative rewards, success rate, steps, path efficiency, environment changes, and reward stability.
-</div>
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
+  <div class="col-md-7 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/projects/reflect-to-explore/threshold-analysis.png" title="Performance across threshold configurations" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Robust performance across different confidence threshold settings (0.2–0.5), with success rate and step count consistently outperforming the baseline.
+  Left: learned policy. Right: performance comparison.
 </div>
 
 ## What I Learned
