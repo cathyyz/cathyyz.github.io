@@ -1,21 +1,25 @@
 ---
 layout: page
-title: Reflect-to-Explore
-description: Self-adaptive exploration in RL via dual-layer reflection.
+title: Self-Adaptive RL Agent for Dynamic Environments
+description: Solo research project · Python · Reinforcement learning
 img: assets/img/projects/reflect-to-explore/architecture.png
 importance: 1
 category: work
 ---
 
+*Solo Research Project · Python · Reinforcement Learning*
+
 ## Overview
 
-Inspired by human metacognition's **"rapid response + deep reflection"** dual-layer mechanism, I designed a framework that enables RL agents to autonomously identify learning bottlenecks and adjust strategies in dynamic environments—improving task completion rate by **32.7%** without retraining.
+Built a reinforcement learning agent that adapts to changing environments in real-time. Standard RL algorithms struggle when obstacles shift and targets move — they either react too slowly or waste time over-exploring. I designed a dual-layer reflection mechanism inspired by human cognition that solves this, improving task completion by **32.7%**.
 
-## Problem
+## The Problem
 
-Traditional RL agents often require retraining from scratch or massive additional data when environments change. I wanted to explore: can we borrow from human "reflect-and-adjust" cognitive patterns to help agents adapt more efficiently?
+Traditional RL methods like ε-greedy and DQN work well in static environments but fail when things change. The exploration rate either decays too fast (missing new opportunities) or stays too high (wasting steps on known areas). I wanted to build an agent that knows when to explore more and when to stick with what works — similar to how humans adjust their learning strategies based on feedback.
 
-## Core Innovation: Dual-Layer Reflection Mechanism
+## My Solution
+
+I designed a dual-layer system inspired by human cognitive regulation:
 
 | Layer | Trigger Condition | Function |
 | --- | --- | --- |
@@ -26,14 +30,20 @@ Traditional RL agents often require retraining from scratch or massive additiona
 
 **Multi-dimensional Confidence Evaluation:** Single reward signals are too noisy. I designed a composite metric (path efficiency + reward stability + success rate) to provide reliable triggers for reflection.
 
-<div class="row justify-content-sm-center">
-  <div class="col-sm-11 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/projects/reflect-to-explore/architecture.png" title="Self-adaptive reinforcement learning agent architecture" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div style="max-width: 92%; margin: 1.25rem auto;">
+  {% include figure.liquid path="assets/img/projects/reflect-to-explore/architecture.png" title="Self-adaptive reinforcement learning agent architecture" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="caption">
   System architecture: confidence assessment triggers fast adaptation or deep reflection, which updates Q-learning parameters and action selection.
 </div>
+
+## Implementation
+
+I built everything from scratch in Python:
+
+The core algorithm extends Q-learning with adaptive parameter adjustment. The exploration rate responds to both immediate feedback and long-term trends. I implemented priority-based experience replay using Softmax sampling to help the agent learn more from successful episodes.
+
+For testing, I created a custom dynamic maze environment: a 10×10 grid where obstacles randomly shift every 18 steps and the target has a 30% chance of moving each update. This simulates real-world scenarios where conditions change unpredictably.
 
 ## Key Challenge & Solution
 
@@ -46,11 +56,14 @@ My approach:
 
 ## Results
 
-Tested in a custom dynamic maze environment (10×10 grid, shifting obstacles, moving targets) with 30 independent runs.
+Tested with 30 independent runs against a confidence-based baseline:
 
-- **Task completion rate:** 50.3% vs baseline 37.9% (**+32.7%**)
-- **Path efficiency:** improved by **7.8%**
-- Consistent performance across different parameter configurations, demonstrating robustness
+| Metric | Baseline | My Method | Change |
+| --- | --- | --- | --- |
+| Task Completion | 37.9% | 50.3% | +32.7% |
+| Average Steps | 154.9 | 142.8 | -7.8% |
+
+The method showed consistent improvements across different threshold configurations, demonstrating robustness to hyperparameter choices.
 
 <style>
   .results-pair {
@@ -104,4 +117,6 @@ Tested in a custom dynamic maze environment (10×10 grid, shifting obstacles, mo
 
 ## What I Learned
 
-This project taught me that cross-disciplinary transfer requires finding the right level of abstraction. "Reflection matters" is too vague to implement; simulating neural circuits is too specific to be practical. The key is identifying quantifiable intermediate concepts (confidence metrics, threshold conditions) that bridge cognitive science insights to actual algorithmic improvements.
+This project taught me how to translate abstract ideas into working algorithms. The hardest part was finding the right balance — trigger reflection too often and the agent never stabilizes; trigger too rarely and it gets stuck. I ran extensive experiments to find threshold values that worked across different scenarios.
+
+I also learned that evaluation metrics matter as much as the algorithm itself. A single reward number doesn't capture whether an agent is actually learning to navigate efficiently. Building the multi-dimensional confidence score forced me to think carefully about what "good performance" really means in a dynamic environment.
