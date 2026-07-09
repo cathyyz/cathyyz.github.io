@@ -90,6 +90,12 @@ cta: "[ View Case Study ]"
     max-width: 96%;
     margin: 1.25rem auto 0.5rem;
   }
+  .cymatics-exhibition-text {
+    max-width: 96%;
+    margin: 1rem auto 0;
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
   .cymatics-phase-sub {
     margin: 1.5rem 0 0;
     padding: 0 0 0 1.25rem;
@@ -223,22 +229,16 @@ Tested multiple lens positions and focal lengths to balance magnification agains
 
 </div>
 
-
-## Exhibition Experience
-
-The installation ran at a public exhibition where visitors could:
-
-- Select different music and watch corresponding visual patterns form in real-time
-- Observe how different frequencies and rhythms generate distinct geometric formations
-- For hearing-impaired visitors: experience the structure and emotional arc of music through vision
-
-Nearly every visitor reported that simultaneously "hearing" and "seeing" music created a meditative, calming effect.
+## Exhibition & Execution
 
 <div class="cymatics-full">
   {% include figure.liquid path="assets/img/projects/cymatics/exhibition-experience.png" title="Public exhibition — cymatic patterns projected onto the ceiling" class="img-fluid rounded z-depth-1" %}
 </div>
-<div class="caption">
-  Visitors experience music as dynamic ceiling projections during the public exhibition.
+
+<div class="cymatics-exhibition-text" markdown="1">
+
+In 2024, the installation was showcased at the Sound Visualization Exhibition at the China Academy of Art. As the technical demonstrator, I was fully responsible for the hands-on booth setup, testing lens positions and focal lengths to balance magnification against clarity. I conducted real-time technical demonstrations for diverse visitors and actively facilitated audience interaction. Many visitors reported that simultaneously "hearing" and "seeing" music created a meditative, calming effect.
+
 </div>
 
 ## Reflection
