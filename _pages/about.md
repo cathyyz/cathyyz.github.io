@@ -5,6 +5,7 @@ permalink: /
 description:
 profile:
   align: right
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p>Electrical and Computer Engineering @ UC Berkeley</p>
@@ -166,6 +167,11 @@ _styles: |
     padding-top: 1.5rem;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
   }
+  .portfolio-social img {
+    max-width: 1.25rem;
+    max-height: 1.25rem;
+    object-fit: contain;
+  }
   html[data-theme="dark"] .portfolio-social {
     border-top-color: rgba(255, 255, 255, 0.08);
   }
@@ -210,6 +216,10 @@ During the upcoming semester, I plan to dive deeper into projects like Momentum 
 
   </div>
   <div class="intro-profile">
+    {% if page.profile.image %}
+      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+      {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid z-depth-1 rounded" alt=page.profile.image cache_bust=true %}
+    {% endif %}
     {% if page.profile.more_info %}
       <div class="profile-info">{{ page.profile.more_info }}</div>
     {% endif %}
