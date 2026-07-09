@@ -2,7 +2,7 @@
 layout: page
 title: Cymatics — Visualizing the Invisible
 description: A 4-year hardware project transforming sound into ceiling projections, enabling hearing-impaired communities to experience music visually.
-img: assets/img/projects/cymatics/exhibition-experience.png
+img: assets/img/projects/cymatics/cover.png
 importance: 2
 category: work
 portfolio: true
