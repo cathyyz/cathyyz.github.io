@@ -2,7 +2,7 @@
 layout: page
 title: Self-Adaptive RL Agent for Dynamic Environments
 description: A self-adaptive RL agent that uses dual-layer reflection to navigate dynamic environments, improving task completion by 32.7%.
-img: assets/img/projects/reflect-to-explore/architecture.png
+img: assets/img/projects/reflect-to-explore/cover.png
 importance: 1
 category: work
 portfolio: true
@@ -123,3 +123,4 @@ The method showed consistent improvements across different threshold configurati
 This project taught me how to translate abstract ideas into working algorithms. The hardest part was finding the right balance — trigger reflection too often and the agent never stabilizes; trigger too rarely and it gets stuck. I ran extensive experiments to find threshold values that worked across different scenarios.
 
 I also learned that evaluation metrics matter as much as the algorithm itself. A single reward number doesn't capture whether an agent is actually learning to navigate efficiently. Building the multi-dimensional confidence score forced me to think carefully about what "good performance" really means in a dynamic environment.
+
