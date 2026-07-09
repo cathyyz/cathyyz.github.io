@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Cymatics — Visualizing the Invisible
-description: Sound-to-light installation · 4-year hardware project · Public exhibition
+description: A 4-year hardware project transforming sound into ceiling projections, enabling hearing-impaired communities to experience music visually.
 img: assets/img/projects/cymatics/exhibition-experience.png
 importance: 2
 category: work
+portfolio: true
+tags: [Hardware, Accessibility, Arduino]
+cta: "[ View Case Study ]"
 ---
 
 *Transforming sound into visible projections, enabling hearing-impaired communities to "see" music*
@@ -238,3 +241,4 @@ After the exhibition, I conducted surveys within hearing-impaired communities to
 This project taught me what it truly means to engineer something from zero to one. To achieve clear projection of water ripples, I had to simultaneously consider wave physics, geometric optics, and mechanical structure. During calibration, I continuously adjusted lens focal lengths, light source angles, and water depth; every variable affected the final projection quality, which instilled a habit of systematic testing and documentation.
 
 Over four years — from an 8th-grade Arduino prototype to a 10th-grade exhibition piece — I learned to keep pushing forward under ambiguous goals rather than waiting for a perfect plan. Most importantly, I understood that technology's value lies not in its complexity, but in **whose problem it solves**.
+
