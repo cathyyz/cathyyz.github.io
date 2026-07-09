@@ -10,8 +10,6 @@ tags: [Hardware, Accessibility, Arduino]
 cta: "[ View Case Study ]"
 ---
 
-*Transforming sound into visible projections, enabling hearing-impaired communities to "see" music*
-
 <style>
   .cymatics-meta {
     display: grid;
@@ -92,6 +90,27 @@ cta: "[ View Case Study ]"
     max-width: 96%;
     margin: 1.25rem auto 0.5rem;
   }
+  .cymatics-phase-sub {
+    margin: 1.5rem 0 0;
+    padding: 0 0 0 1.25rem;
+    border-left: 2px solid var(--global-theme-color, #2698ba);
+  }
+  .cymatics-phase-sub .phase-sub-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 0.75rem;
+  }
+  .cymatics-phase-detail {
+    margin-top: 1.25rem;
+  }
+  .cymatics-phase-detail .phase-detail-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    opacity: 0.8;
+    margin: 0 0 0.5rem;
+  }
   @media (max-width: 768px) {
     .cymatics-meta {
       grid-template-columns: 1fr;
@@ -133,13 +152,11 @@ cta: "[ View Case Study ]"
   A visitor observes cymatic patterns forming on the water surface as sound vibrations pass through the resonance chamber.
 </div>
 
-## Inspiration
+## Context
 
 In 7th grade, I watched a documentary about hearing-impaired children rehearsing for a musical. It struck me that something as fundamental as "listening to music" simply doesn't exist for an entire community of people.
 
 This sparked a question: **Can sound be seen?** Could visual experience allow hearing-impaired individuals to feel the rhythm and emotion of music?
-
-## Project Evolution — From Prototype to Exhibition
 
 ### Phase 1: Laser Harp Prototype
 
@@ -166,7 +183,9 @@ The original prototype was designed for single-user viewing — someone looking 
 
 **The solution:** Project the patterns onto the ceiling, allowing comfortable viewing for large audiences while keeping the resonance system compact.
 
-## Engineering Design — Solving the Clear Magnification Problem
+<div class="cymatics-phase-sub">
+
+<div class="phase-sub-title">Engineering Design — Solving the Clear Magnification Problem</div>
 
 Magnified projection creates an inherent tension: higher magnification means blurrier images. Water ripple patterns are dynamic and detail-rich, demanding high optical clarity.
 
@@ -194,9 +213,13 @@ Magnified projection creates an inherent tension: higher magnification means blu
   Left: initial exhibition setup. Right: customized design after lens and resonance chamber optimization.
 </div>
 
-### Lens Optimization
+<div class="cymatics-phase-detail">
+  <div class="phase-detail-title">Lens Optimization</div>
 
-Tested multiple lens positions and focal lengths to balance magnification against clarity. The final configuration projects centimeter-scale water patterns onto the ceiling as sharp, dynamic images exceeding one meter in diameter.
+  Tested multiple lens positions and focal lengths to balance magnification against clarity. The final configuration projects centimeter-scale water patterns onto the ceiling as sharp, dynamic images exceeding one meter in diameter.
+</div>
+
+</div>
 
 ## Exhibition Experience
 
@@ -241,4 +264,3 @@ After the exhibition, I conducted surveys within hearing-impaired communities to
 This project taught me what it truly means to engineer something from zero to one. To achieve clear projection of water ripples, I had to simultaneously consider wave physics, geometric optics, and mechanical structure. During calibration, I continuously adjusted lens focal lengths, light source angles, and water depth; every variable affected the final projection quality, which instilled a habit of systematic testing and documentation.
 
 Over four years — from an 8th-grade Arduino prototype to a 10th-grade exhibition piece — I learned to keep pushing forward under ambiguous goals rather than waiting for a perfect plan. Most importantly, I understood that technology's value lies not in its complexity, but in **whose problem it solves**.
-
