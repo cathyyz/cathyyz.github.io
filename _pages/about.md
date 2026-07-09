@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cathy's Personal Website
+title: About
 permalink: /
 description:
 profile:
@@ -280,3 +280,4 @@ During the upcoming semester, I plan to dive deeper into projects like Momentum 
 {% endif %}
 
 </div>
+
