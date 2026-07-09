@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Self-Adaptive RL Agent for Dynamic Environments
-description: Solo research project · Python · Reinforcement learning
+description: A self-adaptive RL agent that uses dual-layer reflection to navigate dynamic environments, improving task completion by 32.7%.
 img: assets/img/projects/reflect-to-explore/architecture.png
 importance: 1
 category: work
+portfolio: true
+tags: [AI, Research, Python]
+cta: "[ View Case Study ]"
 ---
 
 *Solo Research Project · Python · Reinforcement Learning*
