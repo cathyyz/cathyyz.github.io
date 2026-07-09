@@ -1,81 +1,219 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Cymatics — Visualizing the Invisible
+description: Sound-to-light installation · 4-year hardware project · Public exhibition
+img: assets/img/projects/cymatics/exhibition-experience.png
 importance: 2
 category: work
-giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+*Transforming sound into visible projections, enabling hearing-impaired communities to "see" music*
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<style>
+  .cymatics-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.25rem 0 1.5rem;
+  }
+  .cymatics-meta .meta-item {
+    padding: 0.85rem 1rem;
+    border-left: 3px solid var(--global-theme-color, #2698ba);
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 0 4px 4px 0;
+  }
+  html[data-theme="dark"] .cymatics-meta .meta-item {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .cymatics-meta .meta-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.65;
+    margin-bottom: 0.35rem;
+  }
+  .cymatics-meta .meta-value {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+  .cymatics-hero {
+    max-width: 96%;
+    margin: 0 auto 0.5rem;
+  }
+  .cymatics-split {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 1.25rem 0;
+  }
+  .cymatics-split .split-text {
+    flex: 1 1 55%;
+  }
+  .cymatics-split .split-img {
+    flex: 0 0 42%;
+    max-width: 42%;
+  }
+  .cymatics-split img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .cymatics-pair {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: flex-start;
+    margin: 1.25rem 0 0.5rem;
+  }
+  .cymatics-pair .pair-col {
+    flex: 1 1 50%;
+  }
+  .cymatics-pair img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .cymatics-pair .pair-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+  }
+  .cymatics-full {
+    max-width: 96%;
+    margin: 1.25rem auto 0.5rem;
+  }
+  @media (max-width: 768px) {
+    .cymatics-meta {
+      grid-template-columns: 1fr;
+    }
+    .cymatics-split {
+      flex-direction: column;
+    }
+    .cymatics-split .split-img {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .cymatics-pair {
+      flex-direction: column;
+    }
+  }
+</style>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Project Overview
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="cymatics-meta">
+  <div class="meta-item">
+    <div class="meta-label">Core Technologies</div>
+    <div class="meta-value">Wave Physics · Optical Engineering · Hardware Prototyping · Arduino</div>
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="meta-item">
+    <div class="meta-label">Timeline</div>
+    <div class="meta-value">4 years</div>
+  </div>
+  <div class="meta-item">
+    <div class="meta-label">Outcome</div>
+    <div class="meta-value">Public exhibition installation where visitors experience music transformed into dynamic ceiling projections in real-time</div>
   </div>
 </div>
-```
 
-{% endraw %}
+<div class="cymatics-hero">
+  {% include figure.liquid path="assets/img/projects/cymatics/overview.png" title="Cymatics installation — sound visualized through water ripple patterns" class="img-fluid rounded z-depth-1" %}
+</div>
+<div class="caption">
+  A visitor observes cymatic patterns forming on the water surface as sound vibrations pass through the resonance chamber.
+</div>
+
+## Inspiration
+
+In 7th grade, I watched a documentary about hearing-impaired children rehearsing for a musical. It struck me that something as fundamental as "listening to music" simply doesn't exist for an entire community of people.
+
+This sparked a question: **Can sound be seen?** Could visual experience allow hearing-impaired individuals to feel the rhythm and emotion of music?
+
+## Project Evolution — From Prototype to Exhibition
+
+### Phase 1: Laser Harp Prototype
+
+<div class="cymatics-split">
+  <div class="split-text">
+
+**Goal:** Design an interactive sound device for hearing-impaired children
+
+**Approach:** Built an "invisible harp" using Arduino and laser sensors. Hand movements triggered different notes, and the sound traveled through a speaker into a water surface, creating ripple patterns.
+
+**Result:** Successfully observed different frequencies producing distinct geometric patterns. Achieved a small-scale interactive demonstration of cymatics principles.
+
+  </div>
+  <div class="split-img">
+    {% include figure.liquid path="assets/img/projects/cymatics/laser-harp-prototype.png" title="Phase 1 laser harp prototype with Arduino and laser sensors" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+### Phase 2: Exhibition Installation — Redesigning for Public Space
+
+Transitioning from personal use to a public art exhibition fundamentally changed the design requirements. The need for large-scale display, artistic impact, and immersive experience introduced new engineering challenges.
+
+The original prototype was designed for single-user viewing — someone looking down at a small water surface from close range, where patterns only a few centimeters wide were sufficient. But a public exhibition serves dozens of simultaneous viewers. Simply scaling up the water container would make acoustic resonance exponentially harder to achieve.
+
+**The solution:** Project the patterns onto the ceiling, allowing comfortable viewing for large audiences while keeping the resonance system compact.
+
+## Engineering Design — Solving the Clear Magnification Problem
+
+Magnified projection creates an inherent tension: higher magnification means blurrier images. Water ripple patterns are dynamic and detail-rich, demanding high optical clarity.
+
+**Solution:** I figured that I can use the concave mirror itself to hold water. This way, the water surface sits directly on a focusing reflector. And by fitting the concave mirror directly into the concave surface of the sound box, I can maximize efficiency and minimize space.
+
+**Structure:**
+
+- Speaker at the base generates vibrations
+- Concave mirror mounted above, filled with a thin layer of water; vibrations transfer through the frame to the water surface, forming patterns
+- Light source illuminates the water from above
+- The concave mirror reflects and focuses the patterned light upward
+- A convex lens in the shade plate provides further magnification control
+
+<div class="cymatics-pair">
+  <div class="pair-col">
+    <div class="pair-label">First version</div>
+    {% include figure.liquid path="assets/img/projects/cymatics/engineering-v1.png" title="Early ceiling projection of cymatic patterns" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="pair-col">
+    <div class="pair-label">Refined design</div>
+    {% include figure.liquid path="assets/img/projects/cymatics/engineering-v2.png" title="Improved exhibition installation with optical magnification system" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Left: early ceiling projection result. Right: refined exhibition setup with integrated lens and resonance chamber.
+</div>
+
+### Lens Optimization
+
+Tested multiple lens positions and focal lengths to balance magnification against clarity. The final configuration projects centimeter-scale water patterns onto the ceiling as sharp, dynamic images exceeding one meter in diameter.
+
+## Exhibition Experience
+
+The installation ran at a public exhibition where visitors could:
+
+- Select different music and watch corresponding visual patterns form in real-time
+- Observe how different frequencies and rhythms generate distinct geometric formations
+- For hearing-impaired visitors: experience the structure and emotional arc of music through vision
+
+Nearly every visitor reported that simultaneously "hearing" and "seeing" music created a meditative, calming effect.
+
+<div class="cymatics-full">
+  {% include figure.liquid path="assets/img/projects/cymatics/exhibition-experience.png" title="Public exhibition — cymatic patterns projected onto the ceiling" class="img-fluid rounded z-depth-1" %}
+</div>
+<div class="caption">
+  Visitors experience music as dynamic ceiling projections during the public exhibition.
+</div>
+
+## Reflection
+
+This project taught me what it truly means to engineer something from zero to one. To achieve clear projection of water ripples, I had to simultaneously consider wave physics, geometric optics, and mechanical structure. During calibration, I continuously adjusted lens focal lengths, light source angles, and water depth; every variable affected the final projection quality, which instilled a habit of systematic testing and documentation.
+
+Over four years — from an 8th-grade Arduino prototype to a 10th-grade exhibition piece — I learned to keep pushing forward under ambiguous goals rather than waiting for a perfect plan. Most importantly, I understood that technology's value lies not in its complexity, but in **whose problem it solves**.
