@@ -67,15 +67,26 @@ cta: "[ View Case Study ]"
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 1rem;
-    align-items: flex-start;
+    align-items: stretch;
     margin: 1.25rem 0 0.5rem;
   }
   .cymatics-pair .pair-col {
     flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
   }
-  .cymatics-pair img {
+  .cymatics-pair .pair-col figure {
+    flex: 1 1 auto;
+    height: 300px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .cymatics-pair .pair-col figure img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     display: block;
   }
   .cymatics-pair .pair-label {
@@ -130,6 +141,13 @@ cta: "[ View Case Study ]"
     }
     .cymatics-pair {
       flex-direction: column;
+    }
+    .cymatics-pair .pair-col figure {
+      height: auto;
+    }
+    .cymatics-pair .pair-col figure img {
+      height: auto;
+      object-fit: contain;
     }
   }
 </style>
