@@ -6,12 +6,15 @@ description:
 nav: true
 nav_order: 2
 _styles: |
-  article .post-header {
-    display: none;
+  .post-header {
+    display: none !important;
   }
 ---
 
 <style>
+  .post-header {
+    display: none !important;
+  }
   .portfolio-projects {
     --portfolio-accent: var(--global-theme-color, #b509ac);
   }
@@ -147,3 +150,4 @@ _styles: |
 </div>
 
 </div>
+
