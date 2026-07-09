@@ -179,16 +179,16 @@ Magnified projection creates an inherent tension: higher magnification means blu
 
 <div class="cymatics-pair">
   <div class="pair-col">
-    <div class="pair-label">First version</div>
-    {% include figure.liquid path="assets/img/projects/cymatics/engineering-v1.png" title="Early ceiling projection of cymatic patterns" class="img-fluid rounded z-depth-1" %}
+    <div class="pair-label">Initial exhibition setup</div>
+    {% include figure.liquid path="assets/img/projects/cymatics/engineering-v2.png" title="Initial exhibition installation setup" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="pair-col">
-    <div class="pair-label">Refined design</div>
-    {% include figure.liquid path="assets/img/projects/cymatics/engineering-v2.png" title="Improved exhibition installation with optical magnification system" class="img-fluid rounded z-depth-1" %}
+    <div class="pair-label">Customized design</div>
+    {% include figure.liquid path="assets/img/projects/cymatics/engineering-v1.png" title="Customized exhibition installation with optimized optical system" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Left: early ceiling projection result. Right: refined exhibition setup with integrated lens and resonance chamber.
+  Left: initial exhibition setup. Right: customized design after lens and resonance chamber optimization.
 </div>
 
 ### Lens Optimization
@@ -210,6 +210,27 @@ Nearly every visitor reported that simultaneously "hearing" and "seeing" music c
 </div>
 <div class="caption">
   Visitors experience music as dynamic ceiling projections during the public exhibition.
+</div>
+
+### Phase 3: Sound Localization Device
+
+After the exhibition, I conducted surveys within hearing-impaired communities to understand their daily challenges. A recurring response emerged: the inability to determine the direction of sounds poses real safety risks — especially for critical alerts like fire alarms, car horns, or someone calling for attention.
+
+<div class="cymatics-split">
+  <div class="split-text">
+
+**Goal:** Identify specific critical sounds and indicate their direction through visual cues.
+
+**Solution:**
+
+- Microphone array arranged in a circular pattern to capture sound from 360°
+- Algorithm trained to recognize specific sound signatures (fire alarms, doorbells, car horns)
+- LED ring on top displays the direction of the detected sound through illuminated segments
+
+  </div>
+  <div class="split-img">
+    {% include figure.liquid path="assets/img/projects/cymatics/sound-localization-device.png" title="Project Echo — sound localization device with 8-mic array and directional LED ring" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
 
 ## Reflection
