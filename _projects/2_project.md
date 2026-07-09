@@ -177,11 +177,7 @@ This sparked a question: **Can sound be seen?** Could visual experience allow he
 
 ### Phase 2: Exhibition Installation — Redesigning for Public Space
 
-Transitioning from personal use to a public art exhibition fundamentally changed the design requirements. The need for large-scale display, artistic impact, and immersive experience introduced new engineering challenges.
-
-The original prototype was designed for single-user viewing — someone looking down at a small water surface from close range, where patterns only a few centimeters wide were sufficient. But a public exhibition serves dozens of simultaneous viewers. Simply scaling up the water container would make acoustic resonance exponentially harder to achieve.
-
-**The solution:** Project the patterns onto the ceiling, allowing comfortable viewing for large audiences while keeping the resonance system compact.
+The original prototype was designed for single-user viewing, but a public exhibition serves dozens of simultaneous viewers. Simply scaling up the water container would make acoustic resonance exponentially harder to achieve. Therefore, I decided to project the patterns onto the ceiling, allowing comfortable viewing for large audiences while keeping the resonance system compact. But how did I achieve this?
 
 <div class="cymatics-phase-sub">
 
@@ -226,6 +222,7 @@ Tested multiple lens positions and focal lengths to balance magnification agains
 </div>
 
 </div>
+
 
 ## Exhibition Experience
 
