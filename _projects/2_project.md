@@ -244,27 +244,6 @@ Nearly every visitor reported that simultaneously "hearing" and "seeing" music c
   Visitors experience music as dynamic ceiling projections during the public exhibition.
 </div>
 
-### Phase 3: Sound Localization Device
-
-After the exhibition, I conducted surveys within hearing-impaired communities to understand their daily challenges. A recurring response emerged: the inability to determine the direction of sounds poses real safety risks — especially for critical alerts like fire alarms, car horns, or someone calling for attention.
-
-<div class="cymatics-split">
-  <div class="split-text" markdown="1">
-
-**Goal:** Identify specific critical sounds and indicate their direction through visual cues.
-
-**Solution:**
-
-- Microphone array arranged in a circular pattern to capture sound from 360°
-- Algorithm trained to recognize specific sound signatures (fire alarms, doorbells, car horns)
-- LED ring on top displays the direction of the detected sound through illuminated segments
-
-  </div>
-  <div class="split-img">
-    {% include figure.liquid path="assets/img/projects/cymatics/sound-localization-device.png" title="Project Echo — sound localization device with 8-mic array and directional LED ring" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-
 ## Reflection
 
 This project taught me what it truly means to engineer something from zero to one. To achieve clear projection of water ripples, I had to simultaneously consider wave physics, geometric optics, and mechanical structure. During calibration, I continuously adjusted lens focal lengths, light source angles, and water depth; every variable affected the final projection quality, which instilled a habit of systematic testing and documentation.
