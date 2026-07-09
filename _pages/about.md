@@ -5,7 +5,6 @@ permalink: /
 description:
 profile:
   align: right
-  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p>Electrical and Computer Engineering @ UC Berkeley</p>
@@ -24,12 +23,15 @@ latest_posts:
 
 featured_projects_limit: 2
 _styles: |
-  article .post-header {
-    display: none;
+  .post-header {
+    display: none !important;
   }
 ---
 
 <style>
+  .post-header {
+    display: none !important;
+  }
   .portfolio-about {
     --portfolio-accent: var(--global-theme-color, #b509ac);
   }
@@ -208,10 +210,6 @@ During the upcoming semester, I plan to dive deeper into projects like Momentum 
 
   </div>
   <div class="intro-profile">
-    {% if page.profile.image %}
-      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-      {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid z-depth-1 rounded" alt=page.profile.image cache_bust=true %}
-    {% endif %}
     {% if page.profile.more_info %}
       <div class="profile-info">{{ page.profile.more_info }}</div>
     {% endif %}
