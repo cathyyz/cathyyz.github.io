@@ -161,9 +161,9 @@ This sparked a question: **Can sound be seen?** Could visual experience allow he
 ### Phase 1: Laser Harp Prototype
 
 <div class="cymatics-split">
-  <div class="split-text">
+  <div class="split-text" markdown="1">
 
-**Goal:** Design an interactive sound device for hearing-impaired children
+**Goal:** Design an interactive sound device for hearing-impaired children.
 
 **Approach:** Built an "invisible harp" using Arduino and laser sensors. Hand movements triggered different notes, and the sound traveled through a speaker into a water surface, creating ripple patterns.
 
@@ -187,6 +187,8 @@ The original prototype was designed for single-user viewing — someone looking 
 
 <div class="phase-sub-title">Engineering Design — Solving the Clear Magnification Problem</div>
 
+<div markdown="1">
+
 Magnified projection creates an inherent tension: higher magnification means blurrier images. Water ripple patterns are dynamic and detail-rich, demanding high optical clarity.
 
 **Solution:** I figured that I can use the concave mirror itself to hold water. This way, the water surface sits directly on a focusing reflector. And by fitting the concave mirror directly into the concave surface of the sound box, I can maximize efficiency and minimize space.
@@ -199,6 +201,7 @@ Magnified projection creates an inherent tension: higher magnification means blu
 - The concave mirror reflects and focuses the patterned light upward
 - A convex lens in the shade plate provides further magnification control
 
+</div>
 <div class="cymatics-pair">
   <div class="pair-col">
     <div class="pair-label">Initial exhibition setup</div>
@@ -215,8 +218,11 @@ Magnified projection creates an inherent tension: higher magnification means blu
 
 <div class="cymatics-phase-detail">
   <div class="phase-detail-title">Lens Optimization</div>
+  <div markdown="1">
 
-  Tested multiple lens positions and focal lengths to balance magnification against clarity. The final configuration projects centimeter-scale water patterns onto the ceiling as sharp, dynamic images exceeding one meter in diameter.
+Tested multiple lens positions and focal lengths to balance magnification against clarity. The final configuration projects centimeter-scale water patterns onto the ceiling as sharp, dynamic images exceeding one meter in diameter.
+
+  </div>
 </div>
 
 </div>
@@ -243,7 +249,7 @@ Nearly every visitor reported that simultaneously "hearing" and "seeing" music c
 After the exhibition, I conducted surveys within hearing-impaired communities to understand their daily challenges. A recurring response emerged: the inability to determine the direction of sounds poses real safety risks — especially for critical alerts like fire alarms, car horns, or someone calling for attention.
 
 <div class="cymatics-split">
-  <div class="split-text">
+  <div class="split-text" markdown="1">
 
 **Goal:** Identify specific critical sounds and indicate their direction through visual cues.
 
