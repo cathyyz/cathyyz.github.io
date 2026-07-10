@@ -27,7 +27,7 @@ _styles: |
     background: var(--echo-navy);
     color: #f8fafc;
     margin: 0 -15px 2rem;
-    padding: 2.5rem 1.5rem 0;
+    padding: 2.5rem 1.5rem 2.25rem;
     text-align: center;
     border-radius: 0 0 12px 12px;
   }
@@ -61,7 +61,7 @@ _styles: |
   }
   .echo-hero-image {
     max-width: 520px;
-    margin: 0 auto -3rem;
+    margin: 0.5rem auto -1.5rem;
     padding: 0 1rem;
     position: relative;
     z-index: 2;
@@ -82,7 +82,7 @@ _styles: |
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin: 4rem 0 2.5rem;
+    margin: 3rem 0 2.5rem;
     padding-top: 0.5rem;
   }
   .echo-meta .meta-label {
@@ -372,3 +372,4 @@ The system is currently functional for binary directional output. I am now in th
 </div>
 
 </div>
+
