@@ -2,7 +2,7 @@
 layout: page
 title: Project Echo — Desktop Sound Localization Array
 description: A conceptual desktop array providing 360° visual feedback for critical environmental sounds.
-img: assets/img/projects/project-echo/device-render.png
+img: assets/img/projects/project-echo/cover.png
 importance: 3
 category: work
 portfolio: true
@@ -315,13 +315,15 @@ _styles: |
 
 <div class="echo-vision-text" markdown="1">
 
-Following the Cymatics exhibition, I conducted a survey on social media platforms targeting hearing-impaired individuals and their families, asking them about the difficulties they want the most help with in their daily lives. An overwhelming majority of participants reported that the inability to determine the direction of sounds greatly bothered them in their daily lives. And this wasn't just an inconvenience as well, it posed real safety risks. Critical alerts like fire alarms, doorbells, car horns, or someone calling for attention all require not just detection, but directional awareness to respond appropriately.
+Following the Cymatics exhibition, I conducted a survey on social media platforms targeting hearing-impaired individuals and their families, asking them about the difficulties they want the most help with in their daily lives. An overwhelming majority of participants reported that the inability to determine the direction of sounds greatly bothered them in their daily lives.
+
+This goes beyond mere inconvenience as it fundamentally affects their sense of control over their living environment. Not being able to locate a car horn while crossing the street, or know which direction a call for attention is coming from, creates persistent anxiety in daily navigation. While some assistive devices on the market do offer directional audio features, they often come with high price points, putting them out of reach for many who need them most.
 
 </div>
 
 <div class="echo-goal-box" markdown="1">
 
-**The Goal:** Design a compact desktop device that not only identifies specific critical sounds but also instantly indicates their angle of arrival (AoA) through intuitive visual cues.
+**The Goal:** Design a compact, accessible desktop device that identifies critical sounds and instantly indicates their direction through intuitive visual cues while also allowing users to experience the beauty of sound itself, provide a calming, aesthetic presence that helps reduce the stress associated with auditory uncertainty.
 
 </div>
 
@@ -371,18 +373,22 @@ The system is currently functional for binary directional output. I am now in th
 </div>
 
 <div class="echo-roadmap">
-  <h2 class="echo-section-title">Roadmap & Next Steps</h2>
-  <p class="echo-roadmap-intro">Transitioning this concept into a functional physical prototype is my primary technical goal for the near future. As I dive deeper into engineering mathematics and core engineering principles, my roadmap includes:</p>
+  <h2 class="echo-section-title">Next Steps</h2>
   <div class="echo-roadmap-cards">
     <div class="echo-roadmap-card">
       <div class="card-index">01 //</div>
       <div class="card-title">Full 360° Directional Detection</div>
-      <div class="card-desc">The next major milestone is expanding from the current two-microphone setup to a circular array configuration. This will involve implementing multi-channel TDoA algorithms capable of calculating precise angular positions, enabling the system to pinpoint sound sources across a full 360° radius rather than simple left/right detection.</div>
+      <div class="card-desc">Expanding from the current two-microphone setup to a circular array configuration.</div>
     </div>
     <div class="echo-roadmap-card">
       <div class="card-index">02 //</div>
       <div class="card-title">Hardware Miniaturization</div>
-      <div class="card-desc">Once the algorithms are validated, I'll focus on developing it into a custom compact form. This includes designing a circular PCB to accommodate the microphone array, integrating all processing components into a smaller footprint, and developing the LED arc display for intuitive directional feedback.</div>
+      <div class="card-desc">Once the prototype is finished, I'll focus on developing it into a custom compact form.</div>
+    </div>
+    <div class="echo-roadmap-card">
+      <div class="card-index">03 //</div>
+      <div class="card-title">User Testing & Validation</div>
+      <div class="card-desc">I plan to recruit volunteers from the deaf and hard-of-hearing community to conduct small-scale usability testing to ensure the device's real-world effectiveness.</div>
     </div>
   </div>
 </div>
