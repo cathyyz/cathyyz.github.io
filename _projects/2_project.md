@@ -118,16 +118,6 @@ cta: "[ View Case Study ]"
     line-height: 1.35;
     margin: 0 0 0.75rem;
   }
-  .cymatics-phase-detail {
-    margin-top: 1.25rem;
-  }
-  .cymatics-phase-detail .phase-detail-title {
-    font-size: 0.88rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    opacity: 0.8;
-    margin: 0 0 0.5rem;
-  }
   @media (max-width: 768px) {
     .cymatics-meta {
       grid-template-columns: 1fr;
@@ -236,15 +226,6 @@ Magnified projection creates an inherent tension: higher magnification means blu
   Left: initial exhibition setup. Right: customized design after lens and resonance chamber optimization.
 </div>
 
-<div class="cymatics-phase-detail">
-  <div class="phase-detail-title">Lens Optimization</div>
-  <div markdown="1">
-
-Tested multiple lens positions and focal lengths to balance magnification against clarity. The final configuration projects centimeter-scale water patterns onto the ceiling as sharp, dynamic images exceeding one meter in diameter.
-
-  </div>
-</div>
-
 </div>
 
 ## Exhibition & Execution
@@ -264,3 +245,4 @@ In 2024, the installation was showcased at the Sound Visualization Exhibition at
 This project taught me what it truly means to engineer something from zero to one. To achieve clear projection of water ripples, I had to simultaneously consider wave physics, geometric optics, and mechanical structure. During calibration, I continuously adjusted lens focal lengths, light source angles, and water depth; every variable affected the final projection quality, which instilled a habit of systematic testing and documentation.
 
 Over four years — from an 8th-grade Arduino prototype to a 10th-grade exhibition piece — I learned to keep pushing forward under ambiguous goals rather than waiting for a perfect plan. Most importantly, I understood that technology's value lies not in its complexity, but in **whose problem it solves**.
+
