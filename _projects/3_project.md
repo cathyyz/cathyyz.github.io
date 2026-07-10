@@ -27,7 +27,7 @@ _styles: |
     background: var(--echo-navy);
     color: #f8fafc;
     margin: 0 -15px 2rem;
-    padding: 2.5rem 1.5rem 2.25rem;
+    padding: 2.5rem 1.5rem 2.75rem;
     text-align: center;
     border-radius: 0 0 12px 12px;
   }
@@ -61,7 +61,7 @@ _styles: |
   }
   .echo-hero-image {
     max-width: 520px;
-    margin: 0.5rem auto -1.5rem;
+    margin: 0 auto -1rem;
     padding: 0 1rem;
     position: relative;
     z-index: 2;
@@ -82,7 +82,7 @@ _styles: |
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin: 3rem 0 2.5rem;
+    margin: 2.5rem 0 2.5rem;
     padding-top: 0.5rem;
   }
   .echo-meta .meta-label {
@@ -319,7 +319,7 @@ Following the Cymatics exhibition, I conducted a survey on social media platform
 
 </div>
 
-<div class="echo-goal-box">
+<div class="echo-goal-box" markdown="1">
 
 **The Goal:** Design a compact desktop device that not only identifies specific critical sounds but also instantly indicates their angle of arrival (AoA) through intuitive visual cues.
 
@@ -388,5 +388,6 @@ The system is currently functional for binary directional output. I am now in th
 </div>
 
 </div>
+
 
 
