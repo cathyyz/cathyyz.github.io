@@ -227,14 +227,23 @@ _styles: |
     padding: 2rem 1.5rem 2.5rem;
     border-radius: 12px 12px 0 0;
   }
+  .echo-roadmap,
+  .echo-roadmap p {
+    color: #cbd5e1;
+  }
   .echo-roadmap .echo-section-title {
     color: #fff;
   }
   .echo-roadmap-intro {
     font-size: 0.92rem;
     line-height: 1.6;
-    opacity: 0.85;
+    color: #cbd5e1;
     margin-bottom: 1.25rem;
+  }
+  .echo-roadmap-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   .echo-roadmap-card {
     padding: 1.15rem 1.25rem;
@@ -258,7 +267,7 @@ _styles: |
   .echo-roadmap-card .card-desc {
     font-size: 0.88rem;
     line-height: 1.55;
-    opacity: 0.78;
+    color: #94a3b8;
   }
   @media (max-width: 768px) {
     .echo-meta {
@@ -364,12 +373,20 @@ The system is currently functional for binary directional output. I am now in th
 <div class="echo-roadmap">
   <h2 class="echo-section-title">Roadmap & Next Steps</h2>
   <p class="echo-roadmap-intro">Transitioning this concept into a functional physical prototype is my primary technical goal for the near future. As I dive deeper into engineering mathematics and core engineering principles, my roadmap includes:</p>
-  <div class="echo-roadmap-card">
-    <div class="card-index">01 //</div>
-    <div class="card-title">Algorithm Upgrade</div>
-    <div class="card-desc">Moving beyond simple recognition to implement robust TDoA algorithms for precise directional calculation.</div>
+  <div class="echo-roadmap-cards">
+    <div class="echo-roadmap-card">
+      <div class="card-index">01 //</div>
+      <div class="card-title">Full 360° Directional Detection</div>
+      <div class="card-desc">The next major milestone is expanding from the current two-microphone setup to a circular array configuration. This will involve implementing multi-channel TDoA algorithms capable of calculating precise angular positions, enabling the system to pinpoint sound sources across a full 360° radius rather than simple left/right detection.</div>
+    </div>
+    <div class="echo-roadmap-card">
+      <div class="card-index">02 //</div>
+      <div class="card-title">Hardware Miniaturization</div>
+      <div class="card-desc">Once the algorithms are validated, I'll focus on developing it into a custom compact form. This includes designing a circular PCB to accommodate the microphone array, integrating all processing components into a smaller footprint, and developing the LED arc display for intuitive directional feedback.</div>
+    </div>
   </div>
 </div>
 
 </div>
+
 
