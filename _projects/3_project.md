@@ -8,302 +8,109 @@ category: work
 portfolio: true
 tags: [DSP, Accessibility, Python]
 cta: "[ View Case Study ]"
-_styles: |
-  .post-header {
-    display: none !important;
-  }
 ---
 
 <style>
-  .post-header {
-    display: none !important;
-  }
-  .echo-page {
-    --echo-navy: #0f172a;
-    --echo-orange: #f59e0b;
-    --echo-accent: var(--global-theme-color, #2698ba);
-  }
-  .echo-hero {
-    background: var(--echo-navy);
-    color: #f8fafc;
-    margin: 0 -15px 2rem;
-    padding: 2.5rem 1.5rem 2.75rem;
-    text-align: center;
-    border-radius: 0 0 12px 12px;
-  }
-  .echo-hero .wip-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--echo-orange);
-    border: 1px solid rgba(245, 158, 11, 0.45);
-    border-radius: 999px;
-    padding: 0.3rem 0.75rem;
-    margin-bottom: 1rem;
-  }
-  .echo-hero h1 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: 800;
-    line-height: 1.25;
-    margin: 0 0 0.75rem;
-    color: #fff;
-  }
-  .echo-hero .hero-subtitle {
-    max-width: 36rem;
-    margin: 0 auto 1.5rem;
-    font-size: 0.95rem;
-    line-height: 1.55;
-    opacity: 0.78;
-  }
-  .echo-hero-image {
-    max-width: 520px;
-    margin: 0 auto -1rem;
-    padding: 0 1rem;
-    position: relative;
-    z-index: 2;
-  }
-  .echo-hero-image figure {
-    margin: 0;
-    background: #1e293b;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-  }
-  .echo-hero-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
   .echo-meta {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin: 2.5rem 0 2.5rem;
-    padding-top: 0.5rem;
+    gap: 1rem;
+    margin: 1.25rem 0 1.5rem;
+  }
+  .echo-meta .meta-item {
+    padding: 0.85rem 1rem;
+    border-left: 3px solid var(--global-theme-color, #2698ba);
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 0 4px 4px 0;
+  }
+  html[data-theme="dark"] .echo-meta .meta-item {
+    background: rgba(255, 255, 255, 0.05);
   }
   .echo-meta .meta-label {
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
+    font-size: 0.75rem;
+    font-weight: 600;
     text-transform: uppercase;
-    color: var(--echo-accent);
+    letter-spacing: 0.04em;
+    opacity: 0.65;
     margin-bottom: 0.35rem;
   }
   .echo-meta .meta-value {
     font-size: 0.92rem;
-    font-weight: 600;
     line-height: 1.45;
   }
-  .echo-section-title {
+  .echo-hero {
+    max-width: 96%;
+    margin: 0 auto 0.5rem;
+  }
+  .echo-split {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
     align-items: center;
-    gap: 0.65rem;
-    font-size: 1.35rem;
-    font-weight: 800;
-    margin: 2rem 0 1rem;
+    margin: 1.25rem 0;
   }
-  .echo-section-title::before {
-    content: "";
-    width: 2rem;
-    height: 4px;
-    background: var(--echo-orange);
-    border-radius: 2px;
-    flex-shrink: 0;
+  .echo-split .split-text {
+    flex: 1 1 55%;
   }
-  .echo-vision-text {
-    font-size: 0.98rem;
-    line-height: 1.65;
-    margin-bottom: 1rem;
+  .echo-split .split-img {
+    flex: 0 0 42%;
+    max-width: 42%;
   }
-  .echo-goal-box {
-    padding: 1rem 1.15rem;
-    border-left: 4px solid var(--echo-orange);
-    background: rgba(245, 158, 11, 0.08);
-    border-radius: 0 8px 8px 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
+  .echo-split img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
-  html[data-theme="dark"] .echo-goal-box {
-    background: rgba(245, 158, 11, 0.12);
+  .echo-phase-sub {
+    margin: 1.5rem 0 0;
+    padding: 0 0 0 1.25rem;
+    border-left: 2px solid var(--global-theme-color, #2698ba);
   }
-  .echo-arch-intro {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-    opacity: 0.85;
-  }
-  .echo-layers {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  .echo-layer {
-    display: flex;
-    gap: 0.85rem;
-    align-items: flex-start;
-  }
-  .echo-layer-icon {
-    flex: 0 0 2rem;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 8px;
-    background: rgba(0, 0, 0, 0.05);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    opacity: 0.7;
-  }
-  html[data-theme="dark"] .echo-layer-icon {
-    background: rgba(255, 255, 255, 0.08);
-  }
-  .echo-layer-title {
+  .echo-phase-sub .phase-sub-title {
+    font-size: 1.05rem;
     font-weight: 700;
-    font-size: 0.92rem;
-    margin-bottom: 0.15rem;
-  }
-  .echo-layer-desc {
-    font-size: 0.88rem;
-    line-height: 1.5;
-    opacity: 0.8;
-  }
-  .echo-algorithm-box {
-    padding: 1.25rem;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.04);
-    border: 1px solid rgba(0, 0, 0, 0.06);
-  }
-  html[data-theme="dark"] .echo-algorithm-box {
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(255, 255, 255, 0.08);
-  }
-  .echo-algorithm-box .algo-label {
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--echo-accent);
-    margin-bottom: 0.5rem;
+    line-height: 1.35;
+    margin: 0 0 0.75rem;
   }
   .echo-formula {
     text-align: center;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 600;
     padding: 0.85rem;
     margin: 0.75rem 0;
-    background: var(--global-bg-color, #fff);
+    background: rgba(0, 0, 0, 0.03);
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.06);
   }
   html[data-theme="dark"] .echo-formula {
-    border-color: rgba(255, 255, 255, 0.1);
-  }
-  .echo-algorithm-box .algo-note {
-    font-size: 0.82rem;
-    opacity: 0.75;
-    line-height: 1.5;
-  }
-  .echo-progress-box {
-    padding: 1.25rem;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    background: rgba(0, 0, 0, 0.02);
-    font-size: 0.95rem;
-    line-height: 1.65;
-  }
-  html[data-theme="dark"] .echo-progress-box {
-    border-color: rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.03);
-  }
-  .echo-roadmap {
-    background: var(--echo-navy);
-    color: #e2e8f0;
-    margin: 2.5rem -15px 0;
-    padding: 2rem 1.5rem 2.5rem;
-    border-radius: 12px 12px 0 0;
-  }
-  .echo-roadmap,
-  .echo-roadmap p {
-    color: #cbd5e1;
-  }
-  .echo-roadmap .echo-section-title {
-    color: #fff;
-  }
-  .echo-roadmap-intro {
-    font-size: 0.92rem;
-    line-height: 1.6;
-    color: #cbd5e1;
-    margin-bottom: 1.25rem;
-  }
-  .echo-roadmap-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .echo-roadmap-card {
-    padding: 1.15rem 1.25rem;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-  }
-  .echo-roadmap-card .card-index {
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    color: var(--echo-orange);
-    margin-bottom: 0.35rem;
-  }
-  .echo-roadmap-card .card-title {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 0.35rem;
-  }
-  .echo-roadmap-card .card-desc {
-    font-size: 0.88rem;
-    line-height: 1.55;
-    color: #94a3b8;
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.08);
   }
   @media (max-width: 768px) {
     .echo-meta {
       grid-template-columns: 1fr;
-      margin-top: 3rem;
     }
-    .echo-hero {
-      margin-left: 0;
-      margin-right: 0;
+    .echo-split {
+      flex-direction: column;
     }
-    .echo-roadmap {
-      margin-left: 0;
-      margin-right: 0;
+    .echo-split .split-img {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 </style>
 
-<div class="echo-page">
-
-<div class="echo-hero">
-  <div class="wip-badge">⚠ Work in Progress / Concept</div>
-  <h1>Project Echo: Desktop Sound Localization Array</h1>
-  <p class="hero-subtitle">A conceptual hardware array designed to provide 360° visual feedback for critical environmental sounds.</p>
-  <div class="echo-hero-image">
-    {% include figure.liquid path="assets/img/projects/project-echo/device-render.png" title="Project Echo — sound localization device render" class="img-fluid rounded" %}
-  </div>
-</div>
+## Project Overview
 
 <div class="echo-meta">
   <div class="meta-item">
     <div class="meta-label">Focus Area</div>
-    <div class="meta-value">Digital Signal Processing (DSP), Microphone Arrays, Python</div>
+    <div class="meta-value">Digital Signal Processing (DSP) · Microphone Arrays · Python</div>
   </div>
   <div class="meta-item">
     <div class="meta-label">Current Stage</div>
-    <div class="meta-value">Proof of Concept & Algorithm Prototyping</div>
+    <div class="meta-value">Proof of Concept & Algorithm Prototyping · Work in Progress</div>
   </div>
   <div class="meta-item">
     <div class="meta-label">Target Application</div>
@@ -311,89 +118,80 @@ _styles: |
   </div>
 </div>
 
-<h2 class="echo-section-title">The Vision</h2>
+<div class="echo-hero">
+  {% include figure.liquid path="assets/img/projects/project-echo/device-render.png" title="Project Echo — sound localization device concept render" class="img-fluid rounded z-depth-1" %}
+</div>
+<div class="caption">
+  Concept render of the desktop sound localization array with 8-microphone circular array and directional LED feedback.
+</div>
 
-<div class="echo-vision-text" markdown="1">
+## Context
 
 Following the Cymatics exhibition, I conducted a survey on social media platforms targeting hearing-impaired individuals and their families, asking them about the difficulties they want the most help with in their daily lives. An overwhelming majority of participants reported that the inability to determine the direction of sounds greatly bothered them in their daily lives.
 
 This goes beyond mere inconvenience as it fundamentally affects their sense of control over their living environment. Not being able to locate a car horn while crossing the street, or know which direction a call for attention is coming from, creates persistent anxiety in daily navigation. While some assistive devices on the market do offer directional audio features, they often come with high price points, putting them out of reach for many who need them most.
 
-</div>
-
-<div class="echo-goal-box" markdown="1">
-
 **The Goal:** Design a compact, accessible desktop device that identifies critical sounds and instantly indicates their direction through intuitive visual cues while also allowing users to experience the beauty of sound itself, provide a calming, aesthetic presence that helps reduce the stress associated with auditory uncertainty.
 
+## Proposed Architecture
+
+The current theoretical model is built around an 8-microphone circular array to capture 360° audio data.
+
+- **Hardware Layer:** A high-performance DSP chip handles real-time audio sampling.
+- **Software Layer:** Algorithms trained to recognize specific sound signatures.
+- **Visual Feedback:** A segmented LED ring on top instantly illuminates to show the sound's origin.
+
+<div class="echo-phase-sub">
+
+<div class="phase-sub-title">Core Spatial Algorithm</div>
+
+<div markdown="1">
+
+The algorithm relies on Time Difference of Arrival (TDoA) between microphone pairs, utilizing the geometric relationship:
+
 </div>
 
-<h2 class="echo-section-title">Proposed Architecture</h2>
+<div class="echo-formula">Δt = (d · cos θ) / v</div>
 
-<p class="echo-arch-intro">The current theoretical model is built around an 8-microphone circular array to capture 360° audio data.</p>
+<div markdown="1">
 
-<div class="echo-layers">
-  <div class="echo-layer">
-    <div class="echo-layer-icon">◈</div>
-    <div>
-      <div class="echo-layer-title">Hardware Layer</div>
-      <div class="echo-layer-desc">A high-performance DSP chip handles real-time audio sampling.</div>
-    </div>
+Where *d* = distance between mics, *v* = speed of sound, and *θ* = angle of arrival.
+
+</div>
+
+</div>
+
+<div class="echo-split">
+  <div class="split-text" markdown="1">
+
+The device integrates microphone input, on-board signal processing, and a visual LED ring into a single desktop form factor — translating spatial audio data into immediate directional feedback for the user.
+
   </div>
-  <div class="echo-layer">
-    <div class="echo-layer-icon">&lt;/&gt;</div>
-    <div>
-      <div class="echo-layer-title">Software Layer</div>
-      <div class="echo-layer-desc">Algorithms trained to recognize specific sound signatures.</div>
-    </div>
-  </div>
-  <div class="echo-layer">
-    <div class="echo-layer-icon">⚡</div>
-    <div>
-      <div class="echo-layer-title">Visual Feedback</div>
-      <div class="echo-layer-desc">A segmented LED ring on top instantly illuminates to show the sound's origin.</div>
-    </div>
+  <div class="split-img">
+    {% include figure.liquid path="assets/img/projects/project-echo/cover.png" title="Project Echo hardware prototype" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
-<div class="echo-algorithm-box">
-  <div class="algo-label">Core Spatial Algorithm</div>
-  <p style="margin:0 0 0.5rem;font-size:0.9rem;line-height:1.55;">The algorithm relies on Time Difference of Arrival (TDoA) between microphone pairs, utilizing the geometric relationship:</p>
-  <div class="echo-formula">Δt = (d · cos θ) / v</div>
-  <p class="algo-note">Where <em>d</em> = distance between mics, <em>v</em> = speed of sound, and <em>θ</em> = angle of arrival.</p>
-</div>
-
-<h2 class="echo-section-title">Current Progress</h2>
-
-<div class="echo-progress-box" markdown="1">
+## Current Progress
 
 As a software-first proof of concept, I have successfully developed and tested Python-based audio processing scripts on a Raspberry Pi. The system is capable of extracting audio features and recognizing specific critical sound signatures, such as standard fire alarm frequencies, from raw audio inputs. Additionally, I implemented basic directional detection using a two-microphone setup, applying Time Difference of Arrival (TDoA) calculations to determine whether a sound originates from the left or right side of the device.
 
 The system is currently functional for binary directional output. I am now in the process of refining the detection accuracy before scaling up to a full 360° microphone array.
 
-</div>
+## Next Steps
 
-<div class="echo-roadmap">
-  <h2 class="echo-section-title">Next Steps</h2>
-  <div class="echo-roadmap-cards">
-    <div class="echo-roadmap-card">
-      <div class="card-index">01 //</div>
-      <div class="card-title">Full 360° Directional Detection</div>
-      <div class="card-desc">Expanding from the current two-microphone setup to a circular array configuration.</div>
-    </div>
-    <div class="echo-roadmap-card">
-      <div class="card-index">02 //</div>
-      <div class="card-title">Hardware Miniaturization</div>
-      <div class="card-desc">Once the prototype is finished, I'll focus on developing it into a custom compact form.</div>
-    </div>
-    <div class="echo-roadmap-card">
-      <div class="card-index">03 //</div>
-      <div class="card-title">User Testing & Validation</div>
-      <div class="card-desc">I plan to recruit volunteers from the deaf and hard-of-hearing community to conduct small-scale usability testing to ensure the device's real-world effectiveness.</div>
-    </div>
-  </div>
-</div>
+### Full 360° Directional Detection
 
-</div>
+Expanding from the current two-microphone setup to a circular array configuration.
+
+### Hardware Miniaturization
+
+Once the prototype is finished, I'll focus on developing it into a custom compact form.
+
+### User Testing & Validation
+
+I plan to recruit volunteers from the deaf and hard-of-hearing community to conduct small-scale usability testing to ensure the device's real-world effectiveness.
+
 
 
 
