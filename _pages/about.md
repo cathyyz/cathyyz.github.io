@@ -1,283 +1,195 @@
 ---
 layout: page
-title: About
-permalink: /
-description:
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false
-  more_info: >
-    <p>Electrical and Computer Engineering @ UC Berkeley</p>
-subtitle: <a href="#">Affiliations</a>
-
-selected_papers: false
-social: true
-
-announcements:
-  enabled: false
-
-latest_posts:
-  enabled: true
-  scrollable: true
-  limit: 3
-
-featured_projects_limit: 2
-_styles: |
-  .post-header {
-    display: none !important;
-  }
+title: Project Echo — Desktop Sound Localization Array
+description: A conceptual desktop array providing 360° visual feedback for critical environmental sounds.
+img: assets/img/projects/project-echo/cover.png
+importance: 3
+category: work
+portfolio: true
+tags: [DSP, Accessibility, Python]
+cta: "[ View Case Study ]"
 ---
 
 <style>
-  .post-header {
-    display: none !important;
+  .echo-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.25rem 0 1.5rem;
   }
-  .portfolio-about {
-    --portfolio-accent: var(--global-theme-color, #b509ac);
+  .echo-meta .meta-item {
+    padding: 0.85rem 1rem;
+    border-left: 3px solid var(--global-theme-color, #2698ba);
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 0 4px 4px 0;
   }
-  .portfolio-about-header {
-    margin-bottom: 1.75rem;
+  html[data-theme="dark"] .echo-meta .meta-item {
+    background: rgba(255, 255, 255, 0.05);
   }
-  .portfolio-about-header h1 {
-    font-size: 2rem;
-    font-weight: 700;
+  .echo-meta .meta-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    opacity: 0.65;
     margin-bottom: 0.35rem;
   }
-  .portfolio-about-header .subtitle {
-    font-size: 1rem;
-    opacity: 0.85;
+  .echo-meta .meta-value {
+    font-size: 0.92rem;
+    line-height: 1.45;
   }
-  .portfolio-about-header .subtitle a {
-    color: var(--portfolio-accent);
-    text-decoration: none;
+  .echo-hero {
+    max-width: 96%;
+    margin: 0 auto 0.5rem;
   }
-  .portfolio-about-intro {
+  .echo-split {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 2rem;
-    align-items: flex-start;
-    margin-bottom: 2.5rem;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 1.25rem 0;
   }
-  .portfolio-about-intro .intro-text {
-    flex: 1 1 62%;
-    font-size: 0.98rem;
-    line-height: 1.65;
+  .echo-split .split-text {
+    flex: 1 1 55%;
   }
-  .portfolio-about-intro .intro-text h2 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin: 1.5rem 0 0.75rem;
+  .echo-split .split-img {
+    flex: 0 0 42%;
+    max-width: 42%;
   }
-  .portfolio-about-intro .intro-profile {
-    flex: 0 0 30%;
-    max-width: 30%;
-    text-align: center;
-  }
-  .portfolio-about-intro .intro-profile img {
+  .echo-split img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
-  }
-  .portfolio-about-intro .intro-profile .profile-info {
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    opacity: 0.85;
-  }
-  .portfolio-section-title {
-    font-size: 1.35rem;
-    font-weight: 700;
-    margin: 0 0 1rem;
-  }
-  .portfolio-featured-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
-  }
-  .portfolio-featured-card {
-    flex: 1 1 50%;
-    text-decoration: none;
-    color: inherit;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    overflow: hidden;
-    background: var(--global-bg-color, #fff);
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-  }
-  html[data-theme="dark"] .portfolio-featured-card {
-    border-color: rgba(255, 255, 255, 0.12);
-  }
-  .portfolio-featured-card:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
-    color: inherit;
-    text-decoration: none;
-  }
-  .portfolio-featured-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
     display: block;
   }
-  .portfolio-featured-card .card-title {
-    padding: 0.85rem 1rem 1rem;
-    font-size: 0.95rem;
+  .echo-phase-sub {
+    margin: 1.5rem 0 0;
+    padding: 0 0 0 1.25rem;
+    border-left: 2px solid var(--global-theme-color, #2698ba);
+  }
+  .echo-phase-sub .phase-sub-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 0.75rem;
+  }
+  .echo-formula {
+    text-align: center;
+    font-size: 1.1rem;
     font-weight: 600;
-    line-height: 1.4;
+    padding: 0.85rem;
+    margin: 0.75rem 0;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
   }
-  .portfolio-posts-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .portfolio-posts-list li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    padding: 0.55rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-    font-size: 0.92rem;
-  }
-  html[data-theme="dark"] .portfolio-posts-list li {
-    border-bottom-color: rgba(255, 255, 255, 0.08);
-  }
-  .portfolio-posts-list .post-date {
-    flex: 0 0 auto;
-    opacity: 0.55;
-    white-space: nowrap;
-  }
-  .portfolio-posts-list .post-title {
-    flex: 1 1 auto;
-    text-align: right;
-    color: var(--portfolio-accent);
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .portfolio-posts-list .post-title:hover {
-    text-decoration: underline;
-  }
-  .portfolio-social {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-  }
-  .portfolio-social img {
-    max-width: 1.25rem;
-    max-height: 1.25rem;
-    object-fit: contain;
-  }
-  html[data-theme="dark"] .portfolio-social {
-    border-top-color: rgba(255, 255, 255, 0.08);
+  html[data-theme="dark"] .echo-formula {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.08);
   }
   @media (max-width: 768px) {
-    .portfolio-about-intro {
-      flex-direction: column-reverse;
+    .echo-meta {
+      grid-template-columns: 1fr;
     }
-    .portfolio-about-intro .intro-profile {
+    .echo-split {
+      flex-direction: column;
+    }
+    .echo-split .split-img {
       flex: 0 0 100%;
-      max-width: 220px;
-      margin: 0 auto;
-    }
-    .portfolio-featured-row {
-      flex-direction: column;
-    }
-    .portfolio-posts-list li {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.25rem;
-    }
-    .portfolio-posts-list .post-title {
-      text-align: left;
+      max-width: 100%;
     }
   }
 </style>
 
-<div class="portfolio-about">
+## Project Overview
 
-<div class="portfolio-about-header">
-  <h1>{{ site.title }}</h1>
-  <div class="subtitle">{{ page.subtitle }}</div>
-</div>
-
-<div class="portfolio-about-intro">
-  <div class="intro-text">
-
-My journey at UC Berkeley's Electrical and Computer Engineering program has been defined by a transition from hands-on hardware tinkering to a deep fascination with Machine Learning.
-
-## My Vision for Fall Term & Beyond
-
-During the upcoming semester, I plan to dive deeper into projects like Momentum — applying my AI and Reinforcement Learning skills to real-world problems. I am also looking forward to continuing my work in hardware accessibility and sharing my technical journey with the community.
-
+<div class="echo-meta">
+  <div class="meta-item">
+    <div class="meta-label">Focus Area</div>
+    <div class="meta-value">Digital Signal Processing (DSP) · Microphone Arrays · Python</div>
   </div>
-  <div class="intro-profile">
-    {% if page.profile.image %}
-      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-      {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid z-depth-1 rounded" alt=page.profile.image cache_bust=true %}
-    {% endif %}
-    {% if page.profile.more_info %}
-      <div class="profile-info">{{ page.profile.more_info }}</div>
-    {% endif %}
+  <div class="meta-item">
+    <div class="meta-label">Current Stage</div>
+    <div class="meta-value">Proof of Concept & Algorithm Prototyping · Work in Progress</div>
+  </div>
+  <div class="meta-item">
+    <div class="meta-label">Target Application</div>
+    <div class="meta-value">Desktop accessibility for the hearing-impaired</div>
   </div>
 </div>
 
-<h2 class="portfolio-section-title">Featured Projects</h2>
-
-{% assign featured_projects = site.projects | where: "portfolio", true | sort: "importance" %}
-{% if page.featured_projects_limit %}
-  {% assign featured_projects_limit = page.featured_projects_limit %}
-{% else %}
-  {% assign featured_projects_limit = featured_projects.size %}
-{% endif %}
-
-<div class="portfolio-featured-row">
-  {% for project in featured_projects limit: featured_projects_limit %}
-    <a class="portfolio-featured-card" href="{{ project.url | relative_url }}">
-      {% if project.img %}
-        {% include figure.liquid loading="lazy" path=project.img alt=project.title class="card-img-top" %}
-      {% endif %}
-      <div class="card-title">{{ project.title }}</div>
-    </a>
-  {% endfor %}
+<div class="echo-hero">
+  {% include figure.liquid path="assets/img/projects/project-echo/device-render.png" title="Project Echo — sound localization device concept render" class="img-fluid rounded z-depth-1" %}
+</div>
+<div class="caption">
+  Concept render of the desktop sound localization array with 8-microphone circular array and directional LED feedback.
 </div>
 
-{% if page.latest_posts.enabled %}
-  <h2 class="portfolio-section-title">latest posts</h2>
-  <ul class="portfolio-posts-list">
-    {% assign latest_posts = site.posts %}
-    {% if page.latest_posts.limit %}
-      {% assign latest_posts_limit = page.latest_posts.limit %}
-    {% else %}
-      {% assign latest_posts_limit = latest_posts.size %}
-    {% endif %}
-    {% for item in latest_posts limit: latest_posts_limit %}
-      <li>
-        <span class="post-date">{{ item.date | date: '%b %d, %Y' }}</span>
-        {% if item.redirect == blank %}
-          <a class="post-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% elsif item.redirect contains '://' %}
-          <a class="post-title" href="{{ item.redirect }}" target="_blank">{{ item.title }}</a>
-        {% else %}
-          <a class="post-title" href="{{ item.redirect | relative_url }}">{{ item.title }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+## Context
 
-{% if page.social %}
-  <div class="portfolio-social">
-    {% social_links %}
-    {% if site.contact_note %}
-      <p class="text-muted mt-2">{{ site.contact_note }}</p>
-    {% endif %}
+Following the Cymatics exhibition, I conducted a survey on social media platforms targeting hearing-impaired individuals and their families, asking them about the difficulties they want the most help with in their daily lives. An overwhelming majority of participants reported that the inability to determine the direction of sounds greatly bothered them in their daily lives.
+
+This goes beyond mere inconvenience as it fundamentally affects their sense of control over their living environment. Not being able to locate a car horn while crossing the street, or know which direction a call for attention is coming from, creates persistent anxiety in daily navigation. While some assistive devices on the market do offer directional audio features, they often come with high price points, putting them out of reach for many who need them most.
+
+**The Goal:** Design a compact, accessible desktop device that identifies critical sounds and instantly indicates their direction through intuitive visual cues while also allowing users to experience the beauty of sound itself, provide a calming, aesthetic presence that helps reduce the stress associated with auditory uncertainty.
+
+## Proposed Architecture
+
+The current theoretical model is built around an 8-microphone circular array to capture 360° audio data.
+
+- **Hardware Layer:** A high-performance DSP chip handles real-time audio sampling.
+- **Software Layer:** Algorithms trained to recognize specific sound signatures.
+- **Visual Feedback:** A segmented LED ring on top instantly illuminates to show the sound's origin.
+
+<div class="echo-phase-sub">
+
+<div class="phase-sub-title">Core Spatial Algorithm</div>
+
+<div markdown="1">
+
+The algorithm relies on Time Difference of Arrival (TDoA) between microphone pairs, utilizing the geometric relationship:
+
+</div>
+
+<div class="echo-formula">Δt = (d · cos θ) / v</div>
+
+<div markdown="1">
+
+Where *d* = distance between mics, *v* = speed of sound, and *θ* = angle of arrival.
+
+</div>
+
+</div>
+
+<div class="echo-split">
+  <div class="split-text" markdown="1">
+
+The device integrates microphone input, on-board signal processing, and a visual LED ring into a single desktop form factor — translating spatial audio data into immediate directional feedback for the user.
+
   </div>
-{% endif %}
-
+  <div class="split-img">
+    {% include figure.liquid path="assets/img/projects/project-echo/cover.png" title="Project Echo hardware prototype" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
+
+## Current Progress
+
+As a software-first proof of concept, I have successfully developed and tested Python-based audio processing scripts on a Raspberry Pi. The system is capable of extracting audio features and recognizing specific critical sound signatures, such as standard fire alarm frequencies, from raw audio inputs. Additionally, I implemented basic directional detection using a two-microphone setup, applying Time Difference of Arrival (TDoA) calculations to determine whether a sound originates from the left or right side of the device.
+
+The system is currently functional for binary directional output. I am now in the process of refining the detection accuracy before scaling up to a full 360° microphone array.
+
+## Next Steps
+
+### Full 360° Directional Detection
+
+Expanding from the current two-microphone setup to a circular array configuration.
+
+### Hardware Miniaturization
+
+Once the prototype is finished, I'll focus on developing it into a custom compact form.
+
+### User Testing & Validation
+
+I plan to recruit volunteers from the deaf and hard-of-hearing community to conduct small-scale usability testing to ensure the device's real-world effectiveness.
+
 
