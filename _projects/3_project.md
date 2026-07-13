@@ -87,6 +87,25 @@ cta: "[ View Case Study ]"
     background: rgba(255, 255, 255, 0.04);
     border-color: rgba(255, 255, 255, 0.08);
   }
+  .echo-next-steps {
+    margin: 0.75rem 0 0;
+  }
+  .echo-next-steps .next-step-item {
+    margin: 1rem 0 0;
+    padding: 0 0 0 1.25rem;
+    border-left: 2px solid var(--global-theme-color, #2698ba);
+  }
+  .echo-next-steps .next-step-title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 0.35rem;
+  }
+  .echo-next-steps .next-step-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
   @media (max-width: 768px) {
     .echo-meta {
       grid-template-columns: 1fr;
@@ -180,17 +199,24 @@ The system is currently functional for binary directional output. I am now in th
 
 ## Next Steps
 
-### Full 360° Directional Detection
+<div class="echo-next-steps">
 
-Expanding from the current two-microphone setup to a circular array configuration.
+<div class="next-step-item">
+<div class="next-step-title">Full 360° Directional Detection</div>
+<p>Expanding from the current two-microphone setup to a circular array configuration.</p>
+</div>
 
-### Hardware Miniaturization
+<div class="next-step-item">
+<div class="next-step-title">Hardware Miniaturization</div>
+<p>Once the prototype is finished, I'll focus on developing it into a custom compact form.</p>
+</div>
 
-Once the prototype is finished, I'll focus on developing it into a custom compact form.
+<div class="next-step-item">
+<div class="next-step-title">User Testing & Validation</div>
+<p>I plan to recruit volunteers from the deaf and hard-of-hearing community to conduct small-scale usability testing to ensure the device's real-world effectiveness.</p>
+</div>
 
-### User Testing & Validation
-
-I plan to recruit volunteers from the deaf and hard-of-hearing community to conduct small-scale usability testing to ensure the device's real-world effectiveness.
+</div>
 
 
 
