@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AI Art Perception Study — Statistical Mediation Analysis
-description: Investigating how perceived creativity mediates emotional responses to AI-generated vs. human-created artwork.
+description: Investigating how perceived creativity mediates emotional responses to AI-generated vs. human-created artwork (672 samples).
 img: assets/img/projects/ai-art-perception/cover.png
 importance: 4
 category: work
@@ -169,7 +169,7 @@ This study recruited 56 participants aged from under 18 to over 50, with 66% hav
 
 ## Data Preprocessing
 
-Conducted systematic quality checks on raw survey data: verified completeness (no missing values), detected outliers via boxplots and Z-scores (retained authentic extreme responses), reshaped data from wide to long format for grouped modeling, and appended creation source labels (AI/Human) to each observation.
+Exported survey responses to CSV format and restructured data from wide to long format (one row per participant-artwork observation) for analysis in Stata. Added creation source labels (AI/Human) to each observation.
 
 ## Analytical Methods
 
