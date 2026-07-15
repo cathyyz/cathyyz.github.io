@@ -246,11 +246,14 @@ Mediation analysis indicated that all perceived creativity dimensions significan
 In other words, once labeling effects are removed, what matters most is not whether a work was made by AI or a human, but how creative viewers perceive it to be.
 
   </div>
-  <div class="split-img">
-    {% include figure.liquid path="assets/img/projects/ai-art-perception/mediation-model.png" title="Theoretical mediation model" class="img-fluid rounded z-depth-1" %}
-    <p class="aiart-caption">Figure 4. Theoretical model: creation source → perceived creativity → emotional response.</p>
-  </div>
 </div>
 
 </div>
+
+## What I Learned
+
+This project challenged my assumption that human perception and emotion are too subjective to measure. Through designing Likert scales and validating them with reliability and validity tests, I learned that subjective experiences can be systematically quantified and analyzed.
+
+Additionally, I self-taught Stata to conduct the statistical analysis, which expanded my technical toolkit and my skill of self learning in a short period of time.
+
 
