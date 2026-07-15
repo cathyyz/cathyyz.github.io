@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project Echo — Desktop Sound Localization Array
-description: A conceptual desktop array providing 360° visual feedback for critical environmental sounds.
+description: A desktop accessibility device for the hearing-impaired — combining 360° directional feedback for critical sounds with real-time audio visualization, helping users both locate and experience sound.
 img: assets/img/projects/project-echo/cover.png
 importance: 3
 category: work
@@ -156,9 +156,9 @@ This goes beyond mere inconvenience as it fundamentally affects their sense of c
 
 The current theoretical model is built around an 8-microphone circular array to capture 360° audio data.
 
-- **Hardware Layer:** A high-performance DSP chip handles real-time audio sampling.
+- **Hardware Layer:** A high-performance DSP chip handles real-time audio sampling, while a dedicated visualization module translates audio waveforms into dynamic visual patterns, extending the cymatics principles from my earlier project into a digital medium.
 - **Software Layer:** Algorithms trained to recognize specific sound signatures.
-- **Visual Feedback:** A segmented LED ring on top instantly illuminates to show the sound's origin.
+- **Visual Feedback:** The interface serves a dual purpose. A segmented LED ring on top instantly illuminates to indicate the sound's origin direction. Simultaneously, an integrated display renders real-time visualizations of the sound's frequency and amplitude that allows users not only to locate sounds but to experience them aesthetically.
 
 <div class="echo-phase-sub">
 
@@ -218,6 +218,10 @@ The system is currently functional for binary directional output. I am now in th
 
 </div>
 
+## Reflection
 
+Before this project, I assumed the hearing-impaired population's main difficulty was understanding and enjoying sounds. But the survey taught me otherwise, that their deeper struggle is not knowing where sounds come from, which creates a constant sense of unease in daily navigation. This reminded me to always start from real user needs rather than assumptions.
+
+Looking ahead, I'm hoping to collaborate with others who share an interest in assistive technology, particularly in hardware and acoustic engineering, to bring this concept to a functional product.
 
 
