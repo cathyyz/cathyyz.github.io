@@ -8,7 +8,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>Electrical and Computer Engineering @ UC Berkeley</p>
+    <p>Engineering Mathematics @ UC Berkeley</p>
 subtitle: <a href="#">Affiliations</a>
 
 selected_papers: false
@@ -208,11 +208,13 @@ _styles: |
 <div class="portfolio-about-intro">
   <div class="intro-text" markdown="1">
 
-My journey at UC Berkeley's Electrical and Computer Engineering program has been defined by a transition from hands-on hardware tinkering to a deep fascination with Machine Learning.
+Hi, I'm Cathy Zhou, an incoming freshman studying Engineering Mathematics at UC Berkeley.
 
-## My Vision for Fall Term & Beyond
+I'm interested in data analysis, artificial intelligence, and engineering — how we can apply data and machine learning to build systems and functional products that solve real-world problems. I'm also curious about human-computer interaction and designing technology that people actually want to use.
 
-During the upcoming semester, I plan to dive deeper into projects like Momentum — applying my AI and Reinforcement Learning skills to real-world problems. I am also looking forward to continuing my work in hardware accessibility and sharing my technical journey with the community.
+I'm currently teaching myself Python and SQL, and building this portfolio to document my learning journey. I'm looking forward to exploring courses in statistics, computer science, and machine learning this year.
+
+I'm open to research opportunities, project collaborations, or just connecting with others interested in AI, data, and engineering. Feel free to reach out!
 
   </div>
   <div class="intro-profile">
