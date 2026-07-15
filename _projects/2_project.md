@@ -246,3 +246,5 @@ This project taught me what it truly means to engineer something from zero to on
 
 Over four years — from an 8th-grade Arduino prototype to a 10th-grade exhibition piece — I learned to keep pushing forward under ambiguous goals rather than waiting for a perfect plan. Most importantly, I understood that technology's value lies not in its complexity, but in **whose problem it solves**.
 
+The exhibition also taught me the importance of communication in technology. During the public exhibition, I guided visitors of all ages and backgrounds through the installation. I learned to translate concepts like "acoustic resonance" and "optical magnification" into intuitive explanations. This experience showed me that the ability to bridge technical depth and accessible communication is essential, whether explaining findings to stakeholders, collaborating across teams, or supporting others in understanding data.
+
