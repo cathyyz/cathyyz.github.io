@@ -187,7 +187,7 @@ The device integrates microphone input, on-board signal processing, and a visual
 
   </div>
   <div class="split-img">
-    {% include figure.liquid path="assets/img/projects/project-echo/cover.png" title="Project Echo hardware prototype" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/projects/project-echo/architecture-diagram.png" title="Project Echo system architecture — microphone array, DSP, and directional LED feedback" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
