@@ -7,9 +7,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    <p>Engineering Math & Statistics @ UC Berkeley</p>
-subtitle: <a href="#">Affiliations</a>
+subtitle: '<span class="affil-label">Affiliations.</span> Engineering Mathematics, College of Engineering, UC Berkeley.'
 
 selected_papers: false
 social: true
@@ -46,11 +44,13 @@ _styles: |
   }
   .portfolio-about-header .subtitle {
     font-size: 1rem;
-    opacity: 0.85;
+    opacity: 0.9;
+    line-height: 1.5;
   }
-  .portfolio-about-header .subtitle a {
+  .portfolio-about-header .subtitle .affil-label {
     color: var(--portfolio-accent);
-    text-decoration: none;
+    font-weight: 600;
+    margin-right: 0.25rem;
   }
   .portfolio-about-intro {
     display: flex;
@@ -80,11 +80,30 @@ _styles: |
     height: auto;
     border-radius: 6px;
   }
-  .portfolio-about-intro .intro-profile .profile-info {
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
-    line-height: 1.5;
+  .portfolio-about-intro .intro-profile .profile-social {
+    margin-top: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.85rem;
+  }
+  .portfolio-about-intro .intro-profile .profile-social a {
+    color: inherit;
     opacity: 0.85;
+    font-size: 1.15rem;
+    line-height: 1;
+    text-decoration: none;
+  }
+  .portfolio-about-intro .intro-profile .profile-social a:hover {
+    opacity: 1;
+    color: var(--portfolio-accent);
+  }
+  .portfolio-about-intro .intro-profile .profile-social img {
+    width: 1.15rem;
+    height: 1.15rem;
+    max-width: 1.15rem;
+    max-height: 1.15rem;
+    object-fit: contain;
   }
   .portfolio-section-title {
     font-size: 1.35rem;
@@ -162,19 +181,6 @@ _styles: |
   .portfolio-posts-list .post-title:hover {
     text-decoration: underline;
   }
-  .portfolio-social {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-  }
-  .portfolio-social img {
-    max-width: 1.25rem;
-    max-height: 1.25rem;
-    object-fit: contain;
-  }
-  html[data-theme="dark"] .portfolio-social {
-    border-top-color: rgba(255, 255, 255, 0.08);
-  }
   @media (max-width: 768px) {
     .portfolio-about-intro {
       flex-direction: column-reverse;
@@ -208,11 +214,11 @@ _styles: |
 <div class="portfolio-about-intro">
   <div class="intro-text" markdown="1">
 
-Hi, I'm Cathy Zhou, an incoming freshman studying Engineering Math & Statistics at UC Berkeley.
+Hi, I'm Cathy Zhou, an incoming freshman studying Engineering Mathematics at UC Berkeley.
 
-I'm interested in data analysis, artificial intelligence, and engineering — how we can apply data and machine learning to build systems and functional products that solve real-world problems. I'm also curious about human-computer interaction and designing technology that people actually want to use. 
+I'm interested in data analysis, artificial intelligence, and engineering — how we can apply data and machine learning to build systems and functional products that solve real-world problems. I'm also curious about human-computer interaction and designing technology that people actually want to use.
 
-I'm currently teaching myself Verilog and SQL, and building this portfolio to document my learning journey. I'm looking forward to exploring courses in statistics, computer science, and machine learning this year.
+I'm currently teaching myself Python and SQL, and building this portfolio to document my learning journey. I'm looking forward to exploring courses in statistics, computer science, and machine learning this year.
 
 I'm open to research opportunities, project collaborations, or just connecting with others interested in AI, data, and engineering. Feel free to reach out!
 
@@ -222,8 +228,10 @@ I'm open to research opportunities, project collaborations, or just connecting w
       {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
       {% include figure.liquid loading="eager" path=profile_image_path class="img-fluid z-depth-1 rounded" alt=page.profile.image cache_bust=true %}
     {% endif %}
-    {% if page.profile.more_info %}
-      <div class="profile-info">{{ page.profile.more_info }}</div>
+    {% if page.social %}
+      <div class="profile-social">
+        {% social_links %}
+      </div>
     {% endif %}
   </div>
 </div>
@@ -272,16 +280,6 @@ I'm open to research opportunities, project collaborations, or just connecting w
   </ul>
 {% endif %}
 
-{% if page.social %}
-  <div class="portfolio-social">
-    {% social_links %}
-    {% if site.contact_note %}
-      <p class="text-muted mt-2">{{ site.contact_note }}</p>
-    {% endif %}
-  </div>
-{% endif %}
-
 </div>
-
 
 
