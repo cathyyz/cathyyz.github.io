@@ -26,11 +26,13 @@
   }
   .portfolio-about-header .subtitle {
     font-size: 1rem;
-    opacity: 0.85;
+    opacity: 0.9;
+    line-height: 1.5;
   }
-  .portfolio-about-header .subtitle a {
+  .portfolio-about-header .subtitle .affil-label {
     color: var(--portfolio-accent);
-    text-decoration: none;
+    font-weight: 600;
+    margin-right: 0.25rem;
   }
   .portfolio-about-intro {
     display: flex;
@@ -60,11 +62,30 @@
     height: auto;
     border-radius: 6px;
   }
-  .portfolio-about-intro .intro-profile .profile-info {
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
-    line-height: 1.5;
+  .portfolio-about-intro .intro-profile .profile-social {
+    margin-top: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.85rem;
+  }
+  .portfolio-about-intro .intro-profile .profile-social a {
+    color: inherit;
     opacity: 0.85;
+    font-size: 1.15rem;
+    line-height: 1;
+    text-decoration: none;
+  }
+  .portfolio-about-intro .intro-profile .profile-social a:hover {
+    opacity: 1;
+    color: var(--portfolio-accent);
+  }
+  .portfolio-about-intro .intro-profile .profile-social img {
+    width: 1.15rem;
+    height: 1.15rem;
+    max-width: 1.15rem;
+    max-height: 1.15rem;
+    object-fit: contain;
   }
   .portfolio-section-title {
     font-size: 1.35rem;
@@ -142,19 +163,6 @@
   .portfolio-posts-list .post-title:hover {
     text-decoration: underline;
   }
-  .portfolio-social {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-  }
-  .portfolio-social img {
-    max-width: 1.25rem;
-    max-height: 1.25rem;
-    object-fit: contain;
-  }
-  html[data-theme="dark"] .portfolio-social {
-    border-top-color: rgba(255, 255, 255, 0.08);
-  }
   @media (max-width: 768px) {
     .portfolio-about-intro {
       flex-direction: column-reverse;
@@ -176,7 +184,7 @@
       text-align: left;
     }
   }
-</style> <div class="portfolio-about"> <div class="portfolio-about-header"> <h1>Cathy's Personal Website</h1> <div class="subtitle"><a href="#">Affiliations</a></div> </div> <div class="portfolio-about-intro"> <div class="intro-text"> <p>Hi, I’m Cathy Zhou, an incoming freshman studying Engineering Math &amp; Statistics at UC Berkeley.</p> <p>I’m interested in data analysis, artificial intelligence, and engineering — how we can apply data and machine learning to build systems and functional products that solve real-world problems. I’m also curious about human-computer interaction and designing technology that people actually want to use.</p> <p>I’m currently teaching myself Verilog and SQL, and building this portfolio to document my learning journey. I’m looking forward to exploring courses in statistics, computer science, and machine learning this year.</p> <p>I’m open to research opportunities, project collaborations, or just connecting with others interested in AI, data, and engineering. Feel free to reach out!</p> </div> <div class="intro-profile"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/prof_pic.jpg?v=974957d202f671e4fa6700c04e68deae" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic.jpg" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="profile-info"> <p>Engineering Math &amp; Statistics @ UC Berkeley</p> </div> </div> </div> <h2 class="portfolio-section-title">Featured Projects</h2> <div class="portfolio-featured-row"> <a class="portfolio-featured-card" href="/projects/1_project/"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/projects/reflect-to-explore/cover-480.webp 480w,/assets/img/projects/reflect-to-explore/cover-800.webp 800w,/assets/img/projects/reflect-to-explore/cover-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/projects/reflect-to-explore/cover.png" class="card-img-top" width="100%" height="auto" alt="Self-Adaptive RL Agent for Dynamic Environments" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-title">Self-Adaptive RL Agent for Dynamic Environments</div> </a> <a class="portfolio-featured-card" href="/projects/2_project/"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/projects/cymatics/cover-480.webp 480w,/assets/img/projects/cymatics/cover-800.webp 800w,/assets/img/projects/cymatics/cover-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/projects/cymatics/cover.png" class="card-img-top" width="100%" height="auto" alt="Cymatics — Visualizing the Invisible" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-title">Cymatics — Visualizing the Invisible</div> </a> </div> <h2 class="portfolio-section-title">latest posts</h2> <ul class="portfolio-posts-list"> <li> <span class="post-date">Mar 26, 2025</span> <a class="post-title" href="/blog/2025/plotly/">a post with plotly.js</a> </li> <li> <span class="post-date">Dec 04, 2024</span> <a class="post-title" href="/blog/2024/photo-gallery/">a post with image galleries</a> </li> <li> <span class="post-date">May 14, 2024</span> <a class="post-title" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> </li> </ul> <div class="portfolio-social"> <a href="/assets/pdf/example_pdf.pdf" title="Cv pdf"><i class="ai ai-cv"></i></a> <a href="mailto:you@example.com" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://inspirehep.net/authors/1010907" title="Inspirehep id" rel="external nofollow noopener" target="_blank"><i class="ai ai-inspire"></i></a> <a href="/feed.xml" title="Rss icon"><i class="fa-solid fa-square-rss"></i></a> <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" title="Scholar userid" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a> <p class="text-muted mt-2">You can even add a little note about which of these is the best way to reach you. </p> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Cathy Zhou. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+</style> <div class="portfolio-about"> <div class="portfolio-about-header"> <h1>Cathy's Personal Website</h1> <div class="subtitle"> <span class="affil-label">Affiliations.</span> Engineering Mathematics, College of Engineering, UC Berkeley.</div> </div> <div class="portfolio-about-intro"> <div class="intro-text"> <p>Hi, I’m Cathy Zhou, an incoming freshman studying Engineering Mathematics at UC Berkeley.</p> <p>I’m interested in data analysis, artificial intelligence, and engineering — how we can apply data and machine learning to build systems and functional products that solve real-world problems. I’m also curious about human-computer interaction and designing technology that people actually want to use.</p> <p>I’m currently teaching myself Python and SQL, and building this portfolio to document my learning journey. I’m looking forward to exploring courses in statistics, computer science, and machine learning this year.</p> <p>I’m open to research opportunities, project collaborations, or just connecting with others interested in AI, data, and engineering. Feel free to reach out!</p> </div> <div class="intro-profile"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/prof_pic.jpg?v=974957d202f671e4fa6700c04e68deae" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic.jpg" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="profile-social"> <a href="/assets/pdf/example_pdf.pdf" title="Cv pdf"><i class="ai ai-cv"></i></a> <a href="mailto:you@example.com" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://inspirehep.net/authors/1010907" title="Inspirehep id" rel="external nofollow noopener" target="_blank"><i class="ai ai-inspire"></i></a> <a href="/feed.xml" title="Rss icon"><i class="fa-solid fa-square-rss"></i></a> <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" title="Scholar userid" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a> </div> </div> </div> <h2 class="portfolio-section-title">Featured Projects</h2> <div class="portfolio-featured-row"> <a class="portfolio-featured-card" href="/projects/1_project/"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/projects/reflect-to-explore/cover-480.webp 480w,/assets/img/projects/reflect-to-explore/cover-800.webp 800w,/assets/img/projects/reflect-to-explore/cover-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/projects/reflect-to-explore/cover.png" class="card-img-top" width="100%" height="auto" alt="Self-Adaptive RL Agent for Dynamic Environments" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-title">Self-Adaptive RL Agent for Dynamic Environments</div> </a> <a class="portfolio-featured-card" href="/projects/2_project/"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/projects/cymatics/cover-480.webp 480w,/assets/img/projects/cymatics/cover-800.webp 800w,/assets/img/projects/cymatics/cover-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/projects/cymatics/cover.png" class="card-img-top" width="100%" height="auto" alt="Cymatics — Visualizing the Invisible" loading="lazy" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> <div class="card-title">Cymatics — Visualizing the Invisible</div> </a> </div> <h2 class="portfolio-section-title">latest posts</h2> <ul class="portfolio-posts-list"> <li> <span class="post-date">Mar 26, 2025</span> <a class="post-title" href="/blog/2025/plotly/">a post with plotly.js</a> </li> <li> <span class="post-date">Dec 04, 2024</span> <a class="post-title" href="/blog/2024/photo-gallery/">a post with image galleries</a> </li> <li> <span class="post-date">May 14, 2024</span> <a class="post-title" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> </li> </ul> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Cathy Zhou. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
