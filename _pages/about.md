@@ -20,7 +20,7 @@ latest_posts:
   scrollable: true
   limit: 3
 
-featured_projects_limit: 2
+featured_projects_limit: 4
 _styles: |
   .post-header {
     display: none !important;
@@ -111,14 +111,26 @@ _styles: |
     margin: 0 0 1rem;
   }
   .portfolio-featured-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .portfolio-featured-more {
+    margin: 0 0 2.5rem;
+    text-align: right;
+  }
+  .portfolio-featured-more a {
+    color: var(--portfolio-accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .portfolio-featured-more a:hover {
+    text-decoration: underline;
   }
   .portfolio-featured-card {
-    flex: 1 1 50%;
+    display: block;
     text-decoration: none;
     color: inherit;
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -191,7 +203,7 @@ _styles: |
       margin: 0 auto;
     }
     .portfolio-featured-row {
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
     .portfolio-posts-list li {
       flex-direction: column;
@@ -255,6 +267,9 @@ I'm open to research opportunities, project collaborations, or just connecting w
     </a>
   {% endfor %}
 </div>
+<div class="portfolio-featured-more">
+  <a href="{{ '/projects/' | relative_url }}">View all projects →</a>
+</div>
 
 {% if page.latest_posts.enabled %}
   <h2 class="portfolio-section-title">latest posts</h2>
@@ -281,5 +296,4 @@ I'm open to research opportunities, project collaborations, or just connecting w
 {% endif %}
 
 </div>
-
 
