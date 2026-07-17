@@ -7,7 +7,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-subtitle: '<span class="affil-label">Affiliations.</span> Engineering Mathematics, College of Engineering, UC Berkeley.'
+subtitle: '<span class="affil-label">Affiliations.</span> Engineering Math & Statistics, College of Engineering, UC Berkeley.'
 
 selected_papers: false
 social: true
@@ -226,7 +226,7 @@ _styles: |
 <div class="portfolio-about-intro">
   <div class="intro-text" markdown="1">
 
-Hi, I'm Cathy Zhou, an incoming freshman studying Engineering Mathematics at UC Berkeley.
+Hi, I'm Cathy Zhou, an incoming freshman studying Engineering Math & Statistics at UC Berkeley.
 
 I'm interested in data analysis, artificial intelligence, and engineering — how we can apply data and machine learning to build systems and functional products that solve real-world problems. I'm also curious about human-computer interaction and designing technology that people actually want to use.
 
