@@ -23,28 +23,18 @@ cv:
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+      - institution: University of California, Berkeley
+        location: Berkeley, CA
+        url: https://engineering.berkeley.edu/
+        area: Engineering Math & Statistics
+        studyType: B.S.
+        start_date: 2026
+        end_date: 2030
         score: ""
-        courses: "Theory of Relativity"
+        courses: "CS 61A, Math 53, Physics 7A"
         highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+          - College of Engineering
+          - Incoming freshman, Class of 2030
 
     Experience:
       - company: Institute for Advanced Study, Princeton University
@@ -137,17 +127,25 @@ cv:
         summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Programming & Tools
+        keywords: "Python, Stata, Git/GitHub, SQL (learning), Raspberry Pi, Jupyter"
+      - name: AI & Machine Learning
+        keywords: "Reinforcement Learning, Q-Learning, Environment Modeling, Feature Extraction"
+      - name: Data & Statistical Analysis
+        keywords: "Regression Analysis, Mediation Analysis, Survey Design, Likert Scales, Reliability Testing, Data Preprocessing"
+      - name: Signal Processing & Audio
+        keywords: "Digital Signal Processing, TDoA, Microphone Arrays, Audio Feature Extraction, Sound Classification"
+      - name: Hardware & Engineering
+        keywords: "Arduino, Hardware Prototyping, Optical Engineering, Wave Physics, System Calibration"
+      - name: Research & Communication
+        keywords: "User Research, Double-Blind Experiments, Accessibility Design, Science Communication, Exhibition Demos"
 
     Languages:
-      - name: German
-        summary: "Native speaker"
-
       - name: English
         summary: "Fluent"
+
+      - name: Mandarin
+        summary: "Native speaker"
 
     Interests:
       - name: Physics
@@ -187,3 +185,4 @@ cv:
       - name: Professor Jane Smith
         icon: fa-solid fa-thumbtack
         reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+
