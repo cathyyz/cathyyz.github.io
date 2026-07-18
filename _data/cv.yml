@@ -1,188 +1,87 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Chenyu Zhou (Cathy)
+  label: Engineering Math & Statistics @ UC Berkeley
+  email: zcy2026@berkeley.edu
+  location: Berkeley, CA
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Incoming freshman at UC Berkeley studying Engineering Mathematics and Statistics. Interested in data analysis, AI, and building systems that solve real-world problems.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: cathyyz
 
   sections:
     Education:
       - institution: University of California, Berkeley
         location: Berkeley, CA
         url: https://engineering.berkeley.edu/
-        area: Engineering Math & Statistics
-        studyType: B.S.
-        start_date: 2026
-        end_date: 2030
-        score: ""
-        courses: "CS 61A, Math 53, Physics 7A"
+        area: Engineering Mathematics and Statistics (EMS)
+        studyType: Bachelor of Science
+        start_date: 2026-08
+        end_date: 2030-05
         highlights:
           - College of Engineering
-          - Incoming freshman, Class of 2030
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
-
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - institution: Shanghai Pinghe School
+        location: Shanghai, China
+        area: High School
+        studyType: High School Diploma
+        start_date: 2023-09
+        end_date: 2026-06
+        score: "4.71/4.00 (Weighted)"
 
     Skills:
-      - name: Programming & Tools
-        keywords: "Python, Stata, Git/GitHub, SQL (learning), Raspberry Pi, Jupyter"
-      - name: AI & Machine Learning
-        keywords: "Reinforcement Learning, Q-Learning, Environment Modeling, Feature Extraction"
-      - name: Data & Statistical Analysis
-        keywords: "Regression Analysis, Mediation Analysis, Survey Design, Likert Scales, Reliability Testing, Data Preprocessing"
-      - name: Signal Processing & Audio
-        keywords: "Digital Signal Processing, TDoA, Microphone Arrays, Audio Feature Extraction, Sound Classification"
-      - name: Hardware & Engineering
-        keywords: "Arduino, Hardware Prototyping, Optical Engineering, Wave Physics, System Calibration"
-      - name: Research & Communication
-        keywords: "User Research, Double-Blind Experiments, Accessibility Design, Science Communication, Exhibition Demos"
+      - name: Programming Languages
+        keywords: "Python, Java, HTML"
+      - name: Frameworks & Libraries
+        keywords: "PyTorch, Pandas, NumPy, Matplotlib, Arduino"
+      - name: Tools
+        keywords: "Google Workspace, Git, Stata, Data Visualization"
+
+    Projects:
+      - name: Cymatics Sound Visualization System
+        location: Independent Hardware Project
+        start_date: 2020
+        end_date: 2024
+        summary: Optical and acoustic system projecting sound-generated water patterns for hearing-impaired audiences.
+        highlights:
+          - Designed optical system combining concave mirror, convex lens, and speaker-driven resonance chamber to project sound-generated water patterns onto ceilings for hearing-impaired audiences.
+          - Evolved from Arduino laser harp prototype to exhibition-scale installation through systematic calibration of focal length, light angle, and water depth.
+          - Exhibited at China Academy of Art (2024); demonstrated to 110,000+ visitors.
+
+      - name: Self-Adaptive RL Agent for Dynamic Environments
+        location: Independent Researcher & Project Manager · PKU-Stanford Gen-AI Program
+        start_date: 2024-11
+        end_date: 2025-02
+        summary: Dual-layer reinforcement learning framework for dynamic maze environments.
+        highlights:
+          - Designed dual-layer reinforcement learning framework combining fast adaptation and a reflection mechanism on top of a Q-learning baseline.
+          - Implemented confidence-based exploration with multi-dimensional scoring (path efficiency, reward stability, success rate) and priority experience replay with softmax sampling.
+          - Achieved 32.7% improvement in success rate and 7.8% reduction in average steps in a dynamic 10×10 maze over 30 independent runs.
+          - Published in YSA Journal (13% acceptance rate).
+
+      - name: AI Art Perception Study
+        location: Lead Researcher
+        start_date: 2024-09
+        end_date: 2025-05
+        summary: Statistical mediation analysis of perceived creativity and emotional response to AI vs. human art.
+        highlights:
+          - Conducted 56-participant study (672 data points) examining perceived creativity as a mediator between art source and emotional response.
+          - Performed regression analysis and reliability testing.
+
+      - name: NY Academy of Sciences Ethical AI Challenge
+        location: Team Lead & Programmer
+        start_date: 2024-10
+        end_date: 2024-12
+        summary: Ethical governance and deepfake detection for the NYAS Ethical AI Challenge.
+        highlights:
+          - Managed a multicultural team of 6 members from six countries, coordinating across multiple time zones.
+          - Developed a comprehensive ethical governance framework alongside technical deepfake detection mechanisms.
 
     Languages:
       - name: English
         summary: "Fluent"
-
       - name: Mandarin
         summary: "Native speaker"
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
 
