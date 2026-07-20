@@ -230,7 +230,7 @@ Hi, I'm Cathy Zhou, an incoming freshman studying Engineering Math & Statistics 
 
 I'm interested in data analysis, artificial intelligence, and engineering — how we can apply data and machine learning to build systems and functional products that solve real-world problems. I'm also curious about human-computer interaction and designing technology that people actually want to use.
 
-I'm currently teaching myself Python and SQL, and building this portfolio to document my learning journey. I'm looking forward to exploring courses in statistics, computer science, and machine learning this year.
+I'm currently teaching myself VHDL, SQL, and building this portfolio to document my learning journey. I'm looking forward to exploring courses in statistics, computer science, and machine learning this year.
 
 I'm open to research opportunities, project collaborations, or just connecting with others interested in AI, data, and engineering. Feel free to reach out!
 
