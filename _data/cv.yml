@@ -74,7 +74,7 @@ cv:
         highlights:
           - Managed interactive sound visualization booth for 110,000+ visitors; translated complex physics and audio engineering concepts into accessible presentations for diverse audiences.
 
-    Leadership & Activities:
+    "Leadership & Activities":
       - company: NY Academy of Sciences Ethical AI Challenge
         position: Team Lead
         start_date: 2024-10
@@ -88,6 +88,3 @@ cv:
         end_date: 2026-06
         highlights:
           - Lead school philosophy club facilitating interdisciplinary discussions; manage daily operations, organize meetings, and oversee member recruitment.
-
-
-
