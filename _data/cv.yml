@@ -65,6 +65,22 @@ cv:
           - Developing an NLP-based task decomposition system using Qwen-VL and LangChain.
           - Awarded "Best Algorithm" at school exhibition for optimizing complex workflows into actionable task lists.
 
+      - name: NY Academy of Sciences Ethical AI Challenge
+        location: Team Lead
+        start_date: 2024-10
+        end_date: 2024-12
+        summary: Ethical AI governance and deepfake detection.
+        highlights:
+          - Directed 6-member multicultural team spanning six countries to develop ethical AI governance framework and deepfake detection mechanisms; presented to 100+ attendees at SAST conference.
+
+      - name: Hermes Reading and Film Club
+        location: Founder & President
+        start_date: 2023-09
+        end_date: 2026-06
+        summary: School philosophy club for interdisciplinary discussion.
+        highlights:
+          - Lead school philosophy club facilitating interdisciplinary discussions; manage daily operations, organize meetings, and oversee member recruitment.
+
     Experience:
       - company: China Academy of Art Exhibition
         position: Technical Demonstrator
@@ -74,17 +90,3 @@ cv:
         highlights:
           - Managed interactive sound visualization booth for 110,000+ visitors; translated complex physics and audio engineering concepts into accessible presentations for diverse audiences.
 
-    "Leadership & Activities":
-      - company: NY Academy of Sciences Ethical AI Challenge
-        position: Team Lead
-        start_date: 2024-10
-        end_date: 2024-12
-        highlights:
-          - Directed 6-member multicultural team spanning six countries to develop ethical AI governance framework and deepfake detection mechanisms; presented to 100+ attendees at SAST conference.
-
-      - company: Hermes Reading and Film Club
-        position: Founder & President
-        start_date: 2023-09
-        end_date: 2026-06
-        highlights:
-          - Lead school philosophy club facilitating interdisciplinary discussions; manage daily operations, organize meetings, and oversee member recruitment.
