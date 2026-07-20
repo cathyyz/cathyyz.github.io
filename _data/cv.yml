@@ -1,5 +1,5 @@
 cv:
-  name: Chenyu Zhou (Cathy)
+  name: Chenyu (Cathy) Zhou
   label: Engineering Math & Statistics @ UC Berkeley
   email: zcy2026@berkeley.edu
   location: Berkeley, CA
@@ -16,11 +16,9 @@ cv:
         location: Berkeley, CA
         url: https://engineering.berkeley.edu/
         area: Engineering Mathematics and Statistics (EMS)
-        studyType: Bachelor of Science
+        studyType: B.S.
         start_date: 2026-08
         end_date: 2030-05
-        highlights:
-          - College of Engineering
 
       - institution: Shanghai Pinghe School
         location: Shanghai, China
@@ -28,60 +26,68 @@ cv:
         studyType: High School Diploma
         start_date: 2023-09
         end_date: 2026-06
-        score: "4.71/4.00 (Weighted)"
 
     Skills:
-      - name: Programming Languages
-        keywords: "Python, Java, HTML"
-      - name: Frameworks & Libraries
-        keywords: "PyTorch, Pandas, NumPy, Matplotlib, Arduino"
-      - name: Tools
-        keywords: "Google Workspace, Git, Stata, Data Visualization"
+      - name: Programming
+        keywords: "Python, Java, HTML, JavaScript, WeChat Mini-Program Development"
+      - name: AI / ML
+        keywords: "PyTorch, LangChain, LangGraph, Qwen-VL, YOLO"
+      - name: Data Science
+        keywords: "Statistical Analysis, Research Methodology, Data Visualization"
 
     Projects:
-      - name: Cymatics Sound Visualization System
-        location: Independent Hardware Project
-        start_date: 2020
-        end_date: 2024
-        summary: Optical and acoustic system projecting sound-generated water patterns for hearing-impaired audiences.
-        highlights:
-          - Designed optical system combining concave mirror, convex lens, and speaker-driven resonance chamber to project sound-generated water patterns onto ceilings for hearing-impaired audiences.
-          - Evolved from Arduino laser harp prototype to exhibition-scale installation through systematic calibration of focal length, light angle, and water depth.
-          - Exhibited at China Academy of Art (2024); demonstrated to 110,000+ visitors.
-
-      - name: Self-Adaptive RL Agent for Dynamic Environments
-        location: Independent Researcher & Project Manager · PKU-Stanford Gen-AI Program
+      - name: Dual-Layer Reinforcement Learning for Dynamic Navigation
+        location: Independent Research · PKU-Stanford Gen-AI Program
         start_date: 2024-11
         end_date: 2025-02
-        summary: Dual-layer reinforcement learning framework for dynamic maze environments.
+        url: https://github.com/cathydou/reflection-agent-maze
+        summary: Reflect-to-Explore reinforcement learning for complex maze navigation.
         highlights:
-          - Designed dual-layer reinforcement learning framework combining fast adaptation and a reflection mechanism on top of a Q-learning baseline.
-          - Implemented confidence-based exploration with multi-dimensional scoring (path efficiency, reward stability, success rate) and priority experience replay with softmax sampling.
-          - Achieved 32.7% improvement in success rate and 7.8% reduction in average steps in a dynamic 10×10 maze over 30 independent runs.
-          - Published in YSA Journal (13% acceptance rate).
+          - Engineered a novel "Reflect-to-Explore" reinforcement learning algorithm in Python and PyTorch, integrating cognitive science principles for complex maze navigation.
+          - Implemented a dual memory system capable of real-time adaptation and rapid environment change detection.
+          - Published in YSA Journal (13% acceptance rate); received Outstanding Award with 96.8/100 project score.
+          - Open-sourced codebase on GitHub, garnering community engagement (6 stars, 2 forks).
 
-      - name: AI Art Perception Study
-        location: Lead Researcher
+      - name: Cymatics Sound Visualization System
+        location: Independent Engineering Project (Patent Pending)
+        start_date: 2021-06
+        end_date: 2024-10
+        summary: Interactive cymatics installation transforming sound into visual water patterns.
+        highlights:
+          - Designed a multi-functional vibrating disk operating as speaker cone, liquid container, and optical reflector; evolved from assistive technology concept into interactive art installation showcased at China Academy of Art.
+
+      - name: AI Cognitive Task Assistant
+        location: Team Lead · School PBL Course Project
         start_date: 2024-09
         end_date: 2025-05
-        summary: Statistical mediation analysis of perceived creativity and emotional response to AI vs. human art.
+        summary: NLP-based task decomposition system using Qwen-VL and LangChain.
         highlights:
-          - Conducted 56-participant study (672 data points) examining perceived creativity as a mediator between art source and emotional response.
-          - Performed regression analysis and reliability testing.
+          - Developing an NLP-based task decomposition system using Qwen-VL and LangChain.
+          - Awarded "Best Algorithm" at school exhibition for optimizing complex workflows into actionable task lists.
 
-      - name: NY Academy of Sciences Ethical AI Challenge
-        location: Team Lead & Programmer
+    Experience:
+      - company: China Academy of Art Exhibition
+        position: Technical Demonstrator
+        location: China Academy of Art
+        start_date: 2024-10
+        end_date: 2024-10
+        highlights:
+          - Managed interactive sound visualization booth for 110,000+ visitors; translated complex physics and audio engineering concepts into accessible presentations for diverse audiences.
+
+    Leadership & Activities:
+      - company: NY Academy of Sciences Ethical AI Challenge
+        position: Team Lead
         start_date: 2024-10
         end_date: 2024-12
-        summary: Ethical governance and deepfake detection for the NYAS Ethical AI Challenge.
         highlights:
-          - Managed a multicultural team of 6 members from six countries, coordinating across multiple time zones.
-          - Developed a comprehensive ethical governance framework alongside technical deepfake detection mechanisms.
+          - Directed 6-member multicultural team spanning six countries to develop ethical AI governance framework and deepfake detection mechanisms; presented to 100+ attendees at SAST conference.
 
-    Languages:
-      - name: English
-        summary: "Fluent"
-      - name: Mandarin
-        summary: "Native speaker"
+      - company: Hermes Reading and Film Club
+        position: Founder & President
+        start_date: 2023-09
+        end_date: 2026-06
+        highlights:
+          - Lead school philosophy club facilitating interdisciplinary discussions; manage daily operations, organize meetings, and oversee member recruitment.
+
 
 
