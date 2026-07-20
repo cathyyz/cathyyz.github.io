@@ -2,7 +2,7 @@
 layout: page
 permalink: /education/
 title: Education
-description: Academic background and coursework.
+description:
 nav: true
 nav_order: 4
 _styles: |
@@ -12,16 +12,15 @@ _styles: |
 ---
 
 <style>
-  .post-header {
+  .post-header,
+  header.post-header,
+  .post .post-title,
+  article .post-title,
+  h1.post-title {
     display: none !important;
   }
   .edu-page {
     --edu-accent: var(--global-theme-color, #b509ac);
-  }
-  .edu-page h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
   }
   .edu-school {
     margin-bottom: 2rem;
@@ -99,20 +98,13 @@ _styles: |
     margin: 0;
     opacity: 0.85;
   }
-  @media (max-width: 768px) {
-    .edu-page h1 {
-      font-size: 1.7rem;
-    }
-  }
 </style>
 
 <div class="edu-page">
 
-# Education
-
 <div class="edu-school">
   <p class="school-name"><a href="https://engineering.berkeley.edu/" target="_blank" rel="noopener">University of California, Berkeley</a></p>
-  <p class="degree"><strong>B.S.</strong> in Engineering Mathematics · College of Engineering</p>
+  <p class="degree"><strong>B.S.</strong> in Engineering Math & Statistics · College of Engineering</p>
   <p class="meta">Incoming Freshman · Expected Class of 2030 · Berkeley, CA</p>
 </div>
 
@@ -138,4 +130,5 @@ _styles: |
 </div>
 
 </div>
+
 
