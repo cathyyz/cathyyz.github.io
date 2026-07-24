@@ -3,11 +3,6 @@
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 email: zcy2026@berkeley.edu
 github_username: cathyyz
-# Placeholder LinkedIn → LinkedIn homepage until you create a profile.
-# Then delete this block and use: linkedin_username: your-profile-id
-linkedin_home:
-  logo: fa-brands fa-linkedin
-  title: LinkedIn
-  url: https://www.linkedin.com/
+linkedin_username: chenyu-zhou-993755336
 # cv_pdf: /assets/pdf/Cathy_Zhou_Resume.pdf
 # rss_icon: false
